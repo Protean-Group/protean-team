@@ -2,7 +2,7 @@
 name: github-pr-audit
 description: "Use when auditing a GitHub PR or issue before merge."
 version: 1.2.0
-author: Team6 / Halakukhan
+author: Protean Team / Shaka
 license: MIT
 platforms: [linux, macos, windows]
 metadata:
@@ -87,7 +87,7 @@ Read the repo's `AGENTS.md` / `CONTRIBUTING.md`. Check specifically:
 `Review Can not approve your own pull request` (hard API rule, not policy).
 - Do NOT fake an outside-approver stamp or spin up a second account.
 - Post a transparent QA-pass COMMENT instead: `gh pr comment N --repo O/R
-  --body-file <file>`. Lead with "Team6 QA pass" (honest provenance), document
+  --body-file <file>`. Lead with "Protean Team QA pass" (honest provenance), document
   the substance, the test numbers you actually ran, and any housekeeping fixed.
 ### 6b. When you also own the MERGE lane
 Self-approval being impossible does NOT block the merge — review and merge are

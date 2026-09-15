@@ -16,11 +16,11 @@ metadata:
 
 ## When to Use
 - User gives an OpenAI-compatible base URL and wants it as a named provider selectable via `/model` in CLI or the desktop app.
-- User asks to propagate a provider/model config across multiple Hermes profiles (Team6 fan-out).
+- User asks to propagate a provider/model config across multiple Hermes profiles (Protean Team fan-out).
 - A free community endpoint, self-hosted vLLM/Ollama gateway, or proxy needs registration.
 
 Class: adding an arbitrary OpenAI-compatible base URL as a named Hermes provider,
-optionally across all Team6 profiles, with verified end-to-end proof.
+optionally across all Protean Team profiles, with verified end-to-end proof.
 
 Complements the bundled `hermes-agent` skill (whose own references/ dir lists
 built-in providers; this covers user-defined `providers:<slug>` entries)
@@ -105,7 +105,7 @@ it on high-volume aux slots.
 They form a profile-wide routing override, not a scoped provider registration. With
 `provider: nous` and `default: {MODEL}` set, a leftover
 `model.base_url: https://free.empero.org/v1` + `model.api_key: free` silently sent ALL
-default-model traffic to the empero endpoint on 5 of 6 Team6 profiles. The config block
+default-model traffic to the empero endpoint on 5 of 6 Protean Team profiles. The config block
 LOOKED uniform and correct — only reading `base_url` exposed it. Never fan out a custom
 endpoint via the top-level pair; register `providers.<slug>` and switch via alias. To
 revert, see the Undo section.

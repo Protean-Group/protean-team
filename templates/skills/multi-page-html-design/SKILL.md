@@ -3,7 +3,7 @@
 name: multi-page-html-design
 description: "Use when the user asks for multi-page HTML documents."
 version: 1.0.0
-author: {RELATIONSHIP} (Team6)
+author: {RELATIONSHIP} (Protean Team)
 license: MIT
 platforms: [linux, macos, windows]
 tags: [design, html, multi-page, navigation, prototype, creative, artifact, reference]

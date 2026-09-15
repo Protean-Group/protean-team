@@ -5,7 +5,7 @@ Standard-library-only checker for the safe shareable run packet contract in
 network call, spawns no process, edits no file, and reads no credential. It runs
 no operation — it checks that a run packet is complete and safe to share.
 
-The Team6 Kanban board remains authoritative. A run packet is a derived,
+The Protean Team Kanban board remains authoritative. A run packet is a derived,
 shareable report, not a second state store; validating a packet never changes a
 task's state.
 

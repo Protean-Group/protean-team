@@ -8,13 +8,13 @@ license: MIT
 platforms: [linux, macos, windows]
 metadata:
   hermes:
-    tags: [multi-agent-book, paginated-html, {HABIT}-readability, team6, islamic-content, evidence-honesty]
+    tags: [multi-agent-book, paginated-html, {HABIT}-readability, protean-team, islamic-content, evidence-honesty]
     related_skills: [claude-design, client-review-package, popular-web-designs]
 ---
 
-# Book Creation (Team6 Multi-Agent)
+# Book Creation (Protean Team Multi-Agent)
 
-Build paginated HTML books using Team6's multi-agent workflow. This skill covers the full lifecycle: research → design → build → QA, with specific conventions for {HABIT} readability, Islamic authenticity, health evidence honesty, and interactive features.
+Build paginated HTML books using Protean Team's multi-agent workflow. This skill covers the full lifecycle: research → design → build → QA, with specific conventions for {HABIT} readability, Islamic authenticity, health evidence honesty, and interactive features.
 
 ## When to use
 

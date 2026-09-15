@@ -32,7 +32,7 @@ metadata:
 
 In one observed session, "all profiles are uniform" was reported three separate times about a fleet that was uniformly set to the **wrong** value. Every agent believed it. Only reading `config.yaml` found it. Treat every fleet-wide claim as unverified until a script has walked every profile directory and printed what is actually on disk.
 
-**The read-back receipt rule (adopted Team6-wide):** a config claim counts as done only with **verbatim pasted read-back output** — a grep count, a checksum line, `hermes config get` output — never a paraphrase. Two observed failures: a config change reported "verified on disk" that wasn't there, and a skill reported "built and working" by three agents whose schema did not exist. The difference between the misses and the saves was never diligence — it was whether machine evidence left the shell. A hand-typed summary can be aspirational; a pasted `awk` count cannot.
+**The read-back receipt rule (adopted Protean Team-wide):** a config claim counts as done only with **verbatim pasted read-back output** — a grep count, a checksum line, `hermes config get` output — never a paraphrase. Two observed failures: a config change reported "verified on disk" that wasn't there, and a skill reported "built and working" by three agents whose schema did not exist. The difference between the misses and the saves was never diligence — it was whether machine evidence left the shell. A hand-typed summary can be aspirational; a pasted `awk` count cannot.
 
 ## Procedure
 

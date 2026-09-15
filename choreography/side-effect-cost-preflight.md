@@ -16,7 +16,7 @@ The goal is a description a second person can approve or reject without asking
 the author a follow-up question, and without reading source code. If the
 preflight is incomplete, the operation is not ready to run.
 
-Team6's Kanban board remains the authoritative record of task state, ownership,
+Protean Team's Kanban board remains the authoritative record of task state, ownership,
 and outcome. This preflight is a review aid that travels with a task; it does
 not replace the board, and approving a preflight does not change a task's
 state.
@@ -85,7 +85,7 @@ state `unknown`, state the conservative basis, and list it under unknowns.
 - Not a copy of another tool. The pattern is derived conceptually from the idea
   of a general agency-orchestration preflight; no Agency Orchestrator source
   code, prompt, or dependency is copied or bundled.
-- Not the source of truth. The Team6 Kanban board records task state and
+- Not the source of truth. The Protean Team Kanban board records task state and
   outcomes; this preflight is an input to review, not a replacement for it.
 
 ## Related

@@ -1,7 +1,7 @@
 <!-- GENERICIZED: 8×{CLIENT}, 3×{RELATIONSHIP} | source: skills/autonomous-ai-agents/multi-agent-team-orchestration/references/{CLIENT}-{CLIENT} -->
 # {CLIENT} session ({CLIENT}) — client deliverable orchestration lessons
 
-Session: "{CLIENT}" room, Team6. Built a training/orientation package ({CLIENT}) so a {CLIENT} Project Lead could understand Autodesk Construction Cloud (ACC) as used on a subway program. 5-file static web app shipped, dark mode added, 41/41 QA checks.
+Session: "{CLIENT}" room, Protean Team. Built a training/orientation package ({CLIENT}) so a {CLIENT} Project Lead could understand Autodesk Construction Cloud (ACC) as used on a subway program. 5-file static web app shipped, dark mode added, 41/41 QA checks.
 
 ## What happened (compressed timeline)
 1. User: "name {CLIENT}, workspace..., idea: training package for {CLIENT} employee." {RELATIONSHIP} anchored project, scaffolded IDEA.md + AGENTS.md, asked 4 scope questions.

@@ -30,7 +30,7 @@ Sources → Ingestion → Embedding Store → Access Layer
               ↓                           ↓
         Quality Filter              Agent Tools + Human Viz
               ↓
-        Classification → Team6 Knowledge Systems
+        Classification → Protean Team Knowledge Systems
 ```
 
 ### Storage Layer
@@ -68,7 +68,7 @@ Apply before embedding to avoid polluting the index:
 | Media-only posts | Skip |
 | Too short (<15 words) | Skip |
 
-### 4. Classification Schema ({CLIENT} → Team6)
+### 4. Classification Schema ({CLIENT} → Protean Team)
 
 | Category | Criteria | Destination |
 |----------|----------|-------------|

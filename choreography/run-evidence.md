@@ -81,7 +81,7 @@ For any implementation of this contract:
 
 ```json
 {
-  "run_id": "2026-09-13-team6-run-001",
+  "run_id": "2026-09-13-protean-run-001",
   "phase": "build",
   "step_kind": "tool_call",
   "tool_identifier": "code_editor",
@@ -96,4 +96,4 @@ For any implementation of this contract:
 
 ---
 
-This contract is Apache-2.0 licensed (Team6-kit core). It defines vendor-neutral rules and is not tied to any specific implementation or vendor.
+This contract is Apache-2.0 licensed (Protean Kit core). It defines vendor-neutral rules and is not tied to any specific implementation or vendor.

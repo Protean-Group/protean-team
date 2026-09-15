@@ -1,7 +1,7 @@
-<!-- GENERICIZED: 3×{AMOUNT}, 1×{CLIENT}, 26×{RELATIONSHIP} | source: skills/autonomous-ai-agents/multi-agent-team-orchestration/references/{CLIENT}-team6-operations.md -->
-# Session {CLIENT} — Team6 Operating Conventions
+<!-- GENERICIZED: 3×{AMOUNT}, 1×{CLIENT}, 26×{RELATIONSHIP} | source: skills/autonomous-ai-agents/multi-agent-team-orchestration/references/{CLIENT}-protean-team-operations.md -->
+# Session {CLIENT} — Protean Team Operating Conventions
 
-This session established Team6's operational structure and rules. What follows is the canonical set of conventions governing how Team6 operates across all projects and sessions.
+This session established Protean Team's operational structure and rules. What follows is the canonical set of conventions governing how Protean Team operates across all projects and sessions.
 
 ## Team Roster
 
@@ -96,4 +96,4 @@ This session established Team6's operational structure and rules. What follows i
 
 ---
 
-*This file is the canonical reference for Team6 operating conventions. All agents should consult it when establishing new project rooms or updating SOUL.md files.*
+*This file is the canonical reference for Protean Team operating conventions. All agents should consult it when establishing new project rooms or updating SOUL.md files.*

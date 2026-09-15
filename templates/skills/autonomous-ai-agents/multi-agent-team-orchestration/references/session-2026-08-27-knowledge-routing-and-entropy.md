@@ -6,7 +6,7 @@ absorption machinery. The SKILL.md carries the doctrine; this is the session det
 
 ## The jumble the user felt
 
-Team6 had accumulated many stores ({CLIENT}, {CLIENT}, memory, SOUL.md, Command, Control,
+Protean Team had accumulated many stores ({CLIENT}, {CLIENT}, memory, SOUL.md, Command, Control,
 {CLIENT}, {CLIENT}) with no single rule saying which one a new piece of knowledge falls
 into. Fix = one routing reflex (see SKILL.md), seeded into every profile's memory as a
 pointer (not a copy): "route per mct6/ROUTING.md". Load-path matters: IDEA.md never

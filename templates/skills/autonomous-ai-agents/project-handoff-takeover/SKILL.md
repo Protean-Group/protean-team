@@ -10,7 +10,7 @@ platforms: [linux, macos, windows]
 
 # Project Handoff Takeover
 
-Take an incomplete project left by another build session or tool (Claude CoWork, Claude Code, a different Team6 room, a previous agent) across the finish line. Produces an execution plan for user review — does NOT build until sign-off.
+Take an incomplete project left by another build session or tool (Claude CoWork, Claude Code, a different Protean Team room, a previous agent) across the finish line. Produces an execution plan for user review — does NOT build until sign-off.
 
 ## When to Use
 

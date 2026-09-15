@@ -1,7 +1,7 @@
 <!-- GENERICIZED: 3×{AMOUNT}, 9×{CLIENT}, 1×{MODEL}, 23×{RELATIONSHIP} | source: skills/autonomous-ai-agents/multi-agent-team-orchestration/references/{CLIENT}-workflow-overhaul.md -->
 # Session {CLIENT} — Workflow Overhaul & Model Config
 
-This session corrected Team6's operational model. The dynamic-delegation experiment was replaced with a sequential role-based workflow, and a `model-config-skill` was created.
+This session corrected Protean Team's operational model. The dynamic-delegation experiment was replaced with a sequential role-based workflow, and a `model-config-skill` was created.
 
 ## Workflow Overhaul
 
@@ -48,7 +48,7 @@ Created `model-config-skill` for {RELATIONSHIP} to run at every project start. I
 
 ## {CLIENT} Knowledge Base
 
-Team6 audited the {CLIENT} knowledge base at `/Users/{RELATIONSHIP}/{CLIENT}{CLIENT}/wrk/gc1`. 10 findings compiled into `{CLIENT}-findings/ARIF_AUDIT_2026-08-21.md` and a work order at `{CLIENT}-findings/ARIF_WORK_ORDER.md`. No {CLIENT} files were modified — findings only.
+Protean Team audited the {CLIENT} knowledge base at `/Users/{RELATIONSHIP}/{CLIENT}{CLIENT}/wrk/gc1`. 10 findings compiled into `{CLIENT}-findings/ARIF_AUDIT_2026-08-21.md` and a work order at `{CLIENT}-findings/ARIF_WORK_ORDER.md`. No {CLIENT} files were modified — findings only.
 
 Key findings:
 - Review queue fully disconnected (QA loop decorative, not functional)
@@ -64,4 +64,4 @@ Any skill whose job is to write files should carry a read-back verification bloc
 
 ---
 
-*See also: `references/{CLIENT}-team6-operations.md` for the canonical Team6 operating conventions.*
+*See also: `references/{CLIENT}-protean-team-operations.md` for the canonical Protean Team operating conventions.*

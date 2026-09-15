@@ -1,7 +1,7 @@
 <!-- GENERICIZED: 2×{CLIENT}, 2×{MODEL}, 5×{RELATIONSHIP} | source: skills/autonomous-ai-agents/hermes-session-model-migration/references/upstream-bug-notes.md -->
 # Upstream notes: session model desync, audit, and PR candidates
 
-Observed {CLIENT} during a full Team6 model migration (174 sessions, 8 profiles).
+Observed {CLIENT} during a full Protean Team model migration (174 sessions, 8 profiles).
 
 ## The desync bug (model column vs model_config JSON)
 
@@ -89,7 +89,7 @@ only `hermes config set auxiliary.<slot>.*` can:
 |---|---|---|
 | auxiliary.vision | nous | stepfun/step-3.7-flash:free (all 8) |
 | auxiliary.compression | auto | '' (all) |
-| auxiliary.skills_hub | nous | meituan/longcat-2.0:free (Team6 six); stepfun/step-3.7-flash:free ({RELATIONSHIP}, {RELATIONSHIP}) |
+| auxiliary.skills_hub | nous | meituan/longcat-2.0:free (Protean Team six); stepfun/step-3.7-flash:free ({RELATIONSHIP}, {RELATIONSHIP}) |
 | auxiliary.approval | auto | (all) |
 
 User directive: a main-model switch changes ONLY the main model; aux models

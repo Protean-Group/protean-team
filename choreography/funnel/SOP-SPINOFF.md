@@ -1,11 +1,11 @@
-# SoP — Idea Spin-Off to a Team6 Group + Project
+# SoP — Idea Spin-Off to a Protean Team Group + Project
 
 > The process by which an idea leaves the ideation hub and becomes its own
-> Team6 group chat and project workspace.
+> Protean Team group chat and project workspace.
 
 ## Scope
 
-Applies when a thought or idea **warrants its own Team6 group and project**.
+Applies when a thought or idea **warrants its own Protean Team group and project**.
 The hub is the single intake point: no ad-hoc projects sprout outside this path.
 
 ---
@@ -26,7 +26,7 @@ The hub is the single intake point: no ad-hoc projects sprout outside this path.
 ## Stage 2 — User gate
 
 - **Promotion is not final until @client confirms the spin-off.**
-- The user's explicit go is what converts a passed idea into a new team6 group + project.
+- The user's explicit go is what converts a passed idea into a new protean-team group + project.
 - Hub never self-promotes without this confirm.
 
 ## Stage 3 — Discovery / reuse scan (entry contract before planning)

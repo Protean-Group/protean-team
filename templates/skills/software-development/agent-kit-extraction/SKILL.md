@@ -17,7 +17,7 @@ metadata:
 
 Use when: extracting reusable content from live agent profiles or instance-laden files into a shippable kit; sanitizing/redacting authored content before any public release; genericizing instance tokens into placeholders; building leak gates for a release pipeline; or auditing a teammate's extraction/redaction work. Trigger signals: "extract", "sanitize", "redact", "genericize", "make this shippable", "leak check", "kit boundary".
 
-Turn live, instance-laden agent content (profiles, skills, docs) into a shippable generic template kit without leaking identity, ventures, or user data. Validated end-to-end on the {CLIENT} T-001 Team6 kit (2026-08) — see `references/{CLIENT}` for the worked case.
+Turn live, instance-laden agent content (profiles, skills, docs) into a shippable generic template kit without leaking identity, ventures, or user data. Validated end-to-end on the {CLIENT} T-001 Protean Team kit (2026-08) — see `references/{CLIENT}` for the worked case.
 
 ## Pipeline (in order)
 

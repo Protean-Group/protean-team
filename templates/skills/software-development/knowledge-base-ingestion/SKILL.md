@@ -31,7 +31,7 @@ metadata:
 2. **Quality tiers, not uniform ingestion.** Classify each item as curated/inferred/noise. Don't dilute the index with noise.
 3. **Incremental with state tracking.** Track known IDs to avoid re-ingestion. Make sync idempotent.
 4. **Dynamic clustering, no fixed taxonomy.** Let clusters emerge from content similarity via HDBSCAN. Recluster as material accumulates.
-5. **Continuous incorporation during ingestion.** As new items enter the knowledge base, analyze their *content immediately* and elevate relevant material to Team6 knowledge systems ({CLIENT} patterns, Memory, Soul.md). Do NOT wait until end of session — the user expects ongoing elevation, not retroactive sweeps.
+5. **Continuous incorporation during ingestion.** As new items enter the knowledge base, analyze their *content immediately* and elevate relevant material to Protean Team knowledge systems ({CLIENT} patterns, Memory, Soul.md). Do NOT wait until end of session — the user expects ongoing elevation, not retroactive sweeps.
 
 ## Quality Tier Taxonomy
 

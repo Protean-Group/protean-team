@@ -37,7 +37,7 @@ FAIL-CLOSED RULES (a single violation fails the whole packet):
   R11 provenance is incomplete                            -> PROVENANCE_INCOMPLETE
   R12 redaction status is missing or not checked          -> REDACTION_INCOMPLETE
 
-The Team6 Kanban board remains authoritative. This packet is a derived,
+The Protean Team Kanban board remains authoritative. This packet is a derived,
 shareable report — not a second state store.
 """
 

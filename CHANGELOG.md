@@ -1,12 +1,12 @@
 # CHANGELOG
 
-Dated, per-upgrade log for the Team6-kit public repo. Each entry states what
+Dated, per-upgrade log for the Protean Kit public repo. Each entry states what
 changed, **why** it changed, and the **evidence/source class** behind it.
 
 Evidence classes used throughout:
 
 - **[VERIFIED — internal operating record]** — grounded in a durable internal
-  operating record of the running Team6 fleet (the team's shared doctrine and
+  operating record of the running Protean Team fleet (the team's shared doctrine and
   dated session history). These are the team's own derived rules.
 - **[VERIFIED — public conceptual source]** — grounded in a public source we
   link to below; adopted as a *principle*, never by copying code, prompts,
@@ -35,9 +35,9 @@ docs with heavy references).
 
 ---
 
-v1.2.0 hosting note (canonical-site decision): the **official public Team6 site**
-is https://team6.askaconsult.com. The repository is the source of truth at
-https://github.com/ahrazzle/team6-kit. GitHub Pages is not used and the old
+v1.2.0 hosting note (canonical-site decision): the **official public Protean Team site**
+is https://protean-team.askaconsult.com. The repository is the source of truth at
+https://github.com/Protean-Group/protean-kit. GitHub Pages is not used and the old
 Pages site was taken down. The canonical site carries visible navigation back to
 https://askaconsult.com/digital/. The deployment and DNS boundary is managed
 outside this repository.
@@ -88,13 +88,13 @@ outside this repository.
 - **Evidence:** [VERIFIED — internal operating record]
 
 - **What:** correct the canonical-site labels in the README. The canonical
-  public documentation site for Team6-kit is `team6.askaconsult.com`; the
-  ASKA corporate page at `www.askaconsult.com/team6` is the service listing.
+  public documentation site for Protean Kit is `protean-team.askaconsult.com`; the
+  ASKA corporate page at `www.askaconsult.com/protean-team` is the service listing.
   The README previously called the corporate page the "official site" and
   the canonical site the "technical guide".
 - **Why it changed:** the README labels contradicted the v1.2.0 canonical-site
-  decision recorded below, which names `team6.askaconsult.com` as the official
-  public Team6 site. No code, layout, or route behavior changed.
+  decision recorded below, which names `protean-team.askaconsult.com` as the official
+  public Protean Team site. No code, layout, or route behavior changed.
 
 - **What:** document a resume-channel redirect. A finished one-shot worker
   leaves its session saved on disk, so a follow-up command can run one bounded
@@ -176,7 +176,7 @@ outside this repository.
   (kind + tool/name); retention is bounded with dropped-count visibility; no
   secrets/raw prompts by default; local/loopback guidance. Includes acceptance
   checklist and vendor-neutral example record.
-- **Why:** Team6 has read-back receipts and logs but no local, framework-agnostic
+- **Why:** Protean Team has read-back receipts and logs but no local, framework-agnostic
   artifact of what the agent actually executed (span tree, tool calls, tokens,
   latency, per-model cost) nor a way to diff two runs step-by-step. This is the
   one genuine capability gap identified in the local-agent-toolkit audit.
@@ -215,7 +215,7 @@ outside this repository.
   Agency Orchestrator-style run report, adopted as a concept. This is a
   conceptual operating pattern, **not copied Agency Orchestrator code**: no
   source, prompt, or dependency from any orchestrator project is bundled. The
-  Team6 Kanban board remains the authoritative task record; the packet is a
+  Protean Team Kanban board remains the authoritative task record; the packet is a
   derived shareable report, not a second state store, and adds no runtime
   integration, provider call, or configuration change.
 - **Proof status:** [PROPOSED / PENDING] documentation contract plus local
@@ -270,9 +270,9 @@ outside this repository.
   principle only — no code, prompts, or source copied; the linked `shunt`
   plugin is Apache-2.0 at `spotify/portal-ai-plugins@main/plugins/shunt` but is
   referenced for the routing principle, not imported. The 90% figure is a
-  **self-reported vendor claim**, not Team6 evidence: Team6 adopts only the
+  **self-reported vendor claim**, not Protean Team evidence: Protean Team adopts only the
   routing principle and does not claim this result.
-- **Proof status:** [PROPOSED / PENDING] Team6-kit documentation change;
+- **Proof status:** [PROPOSED / PENDING] Protean Kit documentation change;
   fresh-clone gates and independent review required before release.
 - **Files:** `choreography/io-delegation.md`, `registry/io-delegation.yaml.example`,
   and the README overview.
@@ -292,9 +292,9 @@ outside this repository.
 - **Why it changed:** an operation with side effects needs one reviewable
   description before it runs: what it touches, what it spends, and how to undo
   it. Unknown cost stays explicit and conservative; quotas are never invented.
-- **Evidence:** [Internal design] Team6's own conceptual operating pattern for
+- **Evidence:** [Internal design] Protean Team's own conceptual operating pattern for
   side-effect and cost preflight. No external code, prompt, or dependency is
-  bundled. The Team6 Kanban board remains the authoritative task record; the
+  bundled. The Protean Team Kanban board remains the authoritative task record; the
   preflight is a review aid, not a runtime integration, and adds no provider
   call, paid operation, or configuration change.
 - **Proof status:** [PROPOSED / PENDING] documentation contract plus local
@@ -310,7 +310,7 @@ outside this repository.
   security-sensitive checks, isolated parallel work, and independent evidence
   read-back.
 - **Why:** the public `jnMetaCode/ai-coding-guide` offers useful methods and
-  templates, but Team6 needs a smaller contract that preserves its existing
+  templates, but Protean Team needs a smaller contract that preserves its existing
   ownership, no-secret, QA, and verification rules. The source is used for
   conceptual guidance only; no external template or executable surface is
   bundled.
@@ -343,12 +343,12 @@ outside this repository.
   finished work got redone, approved artifacts got silently rewritten, and
   "done" claims carried no machine-checkable evidence. The missing piece was
   a *checked* format, not another stated norm.
-- **Provenance:** this is a Team6 internal operating record for artifact
-  handoffs. The pattern was designed by Team6 to solve resume/feedback
+- **Provenance:** this is a Protean Team internal operating record for artifact
+  handoffs. The pattern was designed by Protean Team to solve resume/feedback
   boundary issues in Kanban workflows; it is not derived from external code
   or documentation, and no external orchestration code, prompts, or prose
-  are bundled. The field set, parser, and rules are Team6's own generic
-  form. **Team6 Kanban remains the state authority** — the contract is a
+  are bundled. The field set, parser, and rules are Protean Team's own generic
+  form. **Protean Team Kanban remains the state authority** — the contract is a
   per-handoff snapshot written out of the Kanban record, never a
   replacement for it.
 - **Evidence:** [VERIFIED — internal operating record] the fleet's
@@ -379,9 +379,9 @@ outside this repository.
   Without a trust boundary, there is no shared checklist for endpoint trust,
   credential handling, high-risk tool gates, autonomous execution, audit
   logging, or tampering tests. The new contract provides one.
-- **Evidence:** [Internal design] Team6's own conceptual operating pattern for
+- **Evidence:** [Internal design] Protean Team's own conceptual operating pattern for
   router trust boundaries. No external code, prompt, or dependency is
-  bundled. The Team6 Kanban board remains the authoritative task record; the
+  bundled. The Protean Team Kanban board remains the authoritative task record; the
   contract is a review aid, not a runtime integration, and adds no provider
   call, paid operation, or configuration change.
 - **Proof status:** [PROPOSED / PENDING] documentation contract plus local
@@ -400,8 +400,8 @@ outside this repository.
   a unified policy, the team risks hitting unknown limits or inventing quotas.
   A route-based policy that follows the model by provider, identifier, and host
   solves this.
-- **Evidence:** [Internal design] Team6's own conceptual operating pattern. No
-  external code, prompt, or dependency is bundled. The Team6 Kanban board
+- **Evidence:** [Internal design] Protean Team's own conceptual operating pattern. No
+  external code, prompt, or dependency is bundled. The Protean Team Kanban board
   remains the authoritative task record.
 - **Files:** `registry/model-rate-limits.yaml.example`, `choreography/model-policy.md`,
   and the README overview.
@@ -419,7 +419,7 @@ outside this repository.
 - **Why:** without a structured audit, handed-over sources accumulate
   unclassified references, duplicate content, or orphan surfaces that never
   propagate to the full surface set.
-- **Evidence:** [Internal design] Team6's own operating procedure from real
+- **Evidence:** [Internal design] Protean Team's own operating procedure from real
   handovers (the original 1.3.0 audit trail is not carried in this tree; see the convention note above).
 
 ### 2. The audit inspects surfaces, not the README
@@ -429,7 +429,7 @@ outside this repository.
   not rely on README references alone.
 - **Why:** references in the README do not guarantee the full surface set is
   complete or correct.
-- **Evidence:** [Internal design] Team6's own operating procedure.
+- **Evidence:** [Internal design] Protean Team's own operating procedure.
 
 ### 3. Capability matrix, owner, and disposition
 
@@ -438,7 +438,7 @@ outside this repository.
   (adopt, adopt with caveats, or discard).
 - **Why:** without these, candidates accumulate without clear ownership or
   disposition.
-- **Evidence:** [Internal design] Team6's own operating procedure.
+- **Evidence:** [Internal design] Protean Team's own operating procedure.
 
 ### 4. Separate the five phases
 
@@ -446,7 +446,7 @@ outside this repository.
   disposition, surface validation, and propagation. Each phase is recorded
   in the handover audit file.
 - **Why:** separating phases makes handovers auditable and reproducible.
-- **Evidence:** [Internal design] Team6's own operating procedure.
+- **Evidence:** [Internal design] Protean Team's own operating procedure.
 
 ### 5. Bounded proof, receipts, and read-back
 
@@ -454,7 +454,7 @@ outside this repository.
   inventory, propagation receipts) and requires a read-back to validate
   that the candidate is understood and correctly applied.
 - **Why:** without proof and read-back, handovers are opaque and error-prone.
-- **Evidence:** [Internal design] Team6's own operating procedure.
+- **Evidence:** [Internal design] Protean Team's own operating procedure.
 
 ### 6. Preserve unresolved, dead, and blocked
 
@@ -462,7 +462,7 @@ outside this repository.
   work in the handover record, with disposition and owner for each.
 - **Why:** without preservation, candidates lose context and accumulate without
   resolution.
-- **Evidence:** [Internal design] Team6's own operating procedure.
+- **Evidence:** [Internal design] Protean Team's own operating procedure.
 
 ### 7. Propagation through each surface's own gate
 
@@ -471,7 +471,7 @@ outside this repository.
   the handover audit.
 - **Why:** without gate-by-gate propagation, content accumulates without
   consistency across surfaces.
-- **Evidence:** [Internal design] Team6's own operating procedure.
+- **Evidence:** [Internal design] Protean Team's own operating procedure.
 
 ### 8. One capability delta per candidate, routed by impact class
 
@@ -480,7 +480,7 @@ outside this repository.
   reviewed and signed off separately.
 - **Why:** without routing by impact class, deltas accumulate without
   consistent review.
-- **Evidence:** [Internal design] Team6's own operating procedure.
+- **Evidence:** [Internal design] Protean Team's own operating procedure.
 
 ---
 
@@ -503,16 +503,16 @@ outside this repository.
 - **Why:** agent inputs can leak sensitive content or cost-inefficient data.
   Local preprocessing (redaction, cost filters, content pruning) protects
   privacy and cost before they reach an external provider.
-- **Evidence:** [Internal design] Team6's own conceptual operating pattern.
+- **Evidence:** [Internal design] Protean Team's own conceptual operating pattern.
 - **Files:** `choreography/local-preprocessing.md`.
 
 ---
 
 ## 1.0.0 — Initial release (2026-09-01)
 
-- **What:** initial release of Team6-kit, a framework for turning a single AI
+- **What:** initial release of Protean Kit, a framework for turning a single AI
   agent engine into a multi-agent team with clear rules and responsibilities.
 - **Why:** to provide a reference implementation for multi-agent team
   orchestration with clear contracts, QA gates, and provenance tracking.
-- **Evidence:** [Internal design] Team6's own conceptual operating pattern.
+- **Evidence:** [Internal design] Protean Team's own conceptual operating pattern.
 - **Files:** Initial commit.

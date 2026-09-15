@@ -91,7 +91,7 @@ on top of — never instead of — the deterministic checks.
 
 ## 6. Entropy-proof design (axiom)
 
-Every system Team6 builds must be **correct as a pure function of durable
+Every system Protean Team builds must be **correct as a pure function of durable
 state, never of observation cadence**.
 
 - A system must still be correct **on first read after 2+ months untouched**

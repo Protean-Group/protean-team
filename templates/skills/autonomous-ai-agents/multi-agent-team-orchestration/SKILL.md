@@ -246,7 +246,7 @@ When an agent joins an existing session or project, they must retroactively abso
 
 - `references/skill-absorption-workflow.md` — Skill absorption pipeline (Control room sole path, SKILLS.md schema, flag format, external adoption staged rollout with ui-ux-pro-max case).
 - `references/{CLIENT}-knowledge-routing-and-entropy.md` — {CLIENT} Control session: routing doctrine, room-index regeneration, {CLIENT} check5 two-condition liveness, verified no-path-into-group-rooms constraint, transport-only transducer pattern.
-- `references/{CLIENT}-team6-operations.md` — Canonical Team6 operating conventions.
+- `references/{CLIENT}-protean-team-operations.md` — Canonical Protean Team operating conventions.
 - `references/{CLIENT}-{CLIENT}` — {CLIENT} Phase {CLIENT}: Role redesign vs execution model mismatch.
 - `references/{CLIENT}-{CLIENT}` — {CLIENT} Phase {CLIENT}: Optimization audit, query tool.
 - `references/{CLIENT}-{CLIENT}` — {CLIENT} Phase {CLIENT}: Sequential handoff stall, same-file collision.

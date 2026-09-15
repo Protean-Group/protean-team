@@ -22,7 +22,7 @@ platforms: [linux, macos, windows]
   (e.g. "switch them all back to Nous Portal, {MODEL}").
 - A provider test/rollback leaves rooms pinned to a withdrawn or outdated model.
 - Any report that "config.yaml is correct but old chats still use the old model".
-- Recurring full-fleet sweeps ("still getting timeouts — run through all Team6
+- Recurring full-fleet sweeps ("still getting timeouts — run through all Protean Team
   sessions/projects/group chats again"). Start with `scripts/audit_model_state.py`
   — one read-only command covering config defaults, session rows, the desync
   class, cron pins, and delegation overrides.

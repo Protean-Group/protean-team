@@ -16,7 +16,7 @@ handed to a different team. That is exactly why it must be safe to share: it
 carries no secret, no credential value, no internal local path, and no private
 profile identity. A packet that leaks its own context is worse than no packet.
 
-The packet is **derived**, not authoritative. Team6's Kanban board remains the
+The packet is **derived**, not authoritative. Protean Team's Kanban board remains the
 authoritative record of task state, ownership, and outcome. A run packet is a
 shareable **report** derived from that record plus the run's own evidence; it
 is **not a second state store**, and writing or approving a packet never
@@ -99,7 +99,7 @@ unresolved.
 - Not a copy of another tool. The pattern is derived conceptually from the idea
   of an agency-orchestration run report; no Agency Orchestrator source code,
   prompt, or dependency is copied or bundled.
-- Not the source of truth. The Team6 Kanban board records task state and
+- Not the source of truth. The Protean Team Kanban board records task state and
   outcomes; the packet is a derived shareable report, not a second state store,
   and never replaces the board.
 

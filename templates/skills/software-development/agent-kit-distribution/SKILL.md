@@ -17,7 +17,7 @@ metadata:
 
 Use when: deciding how to open-source / distribute a built system (an agent kit, a team config, a tool) — whether to PR into an upstream repo or fork it; keeping a proprietary/paid layer out of an MIT tree; per-directory licensing; NOTICE files; upstream-sync maintenance; publishing to a skills registry. Trigger signals: "make a PR on X", "fork it", "open source this", "incorporate our system into upstream", "license", "don't lose the paid tier".
 
-Validated on the {CLIENT} T-001 Team6 kit decision (2026-08) — see `references/{CLIENT}` for the worked case.
+Validated on the {CLIENT} T-001 Protean Team kit decision (2026-08) — see `references/{CLIENT}` for the worked case.
 
 ## The core decision: merge vs fork
 
@@ -76,4 +76,4 @@ Good PR candidates from practice: audit/inventory scripts, sweep/review gates, g
 
 ## References
 
-- `references/{CLIENT}` — worked case: T-001 Team6 kit, the PR → merge → fork correction chain, license-zone table, NOTICE draft, sequence as routed.
+- `references/{CLIENT}` — worked case: T-001 Protean Team kit, the PR → merge → fork correction chain, license-zone table, NOTICE draft, sequence as routed.

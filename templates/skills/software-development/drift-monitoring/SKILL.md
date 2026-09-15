@@ -14,7 +14,7 @@ metadata:
 
 # Drift Monitoring & Truth-Tier Reconciliation
 
-> Design principles for monitoring layers that watch knowledge bases and project state WITHOUT editing them. {CLIENT} (`~/{CLIENT}{CLIENT}`) is the reference instance: a central feed/analytics hub over Team6 ventures and the canonical {CLIENT}
+> Design principles for monitoring layers that watch knowledge bases and project state WITHOUT editing them. {CLIENT} (`~/{CLIENT}{CLIENT}`) is the reference instance: a central feed/analytics hub over Protean Team ventures and the canonical {CLIENT}
 
 ## When to Use
 

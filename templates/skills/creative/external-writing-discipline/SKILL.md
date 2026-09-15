@@ -2,7 +2,7 @@
 name: external-writing-discipline
 description: "Use when a human reads your writing. Cut filler."
 version: 1.3.0
-author: Lugia (Team6)
+author: Orda (Protean Team)
 license: MIT
 platforms: [linux, macos, windows]
 ---

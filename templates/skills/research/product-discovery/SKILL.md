@@ -81,8 +81,8 @@ When the question is "is our internal capability a sellable product, and should 
    - Report units precisely: occurrences vs files (density vs count). Mixing them misprices the scrub effort.
 
 ### Stage-4 Handoff Packaging
-When research hands to analysis (Team6 stage 4→5), ship a package, not a report:
-- `RESEARCH-BRIEF.html` (visual exec summary — user prefers HTML over markdown) + `bank/NN-domain.md` per researched domain (producer-attributed) + `bank/data/*.json` (machine-readable grids — downstream never re-parses markdown) + `HANDOFF-TO-TEAM6.md` (what-was-researched table, verification accounting "0 unverified", explicit handoff to next stage owner).
+When research hands to analysis (Protean Team stage 4→5), ship a package, not a report:
+- `RESEARCH-BRIEF.html` (visual exec summary — user prefers HTML over markdown) + `bank/NN-domain.md` per researched domain (producer-attributed) + `bank/data/*.json` (machine-readable grids — downstream never re-parses markdown) + `HANDOFF-TO-PROTEAN-TEAM.md` (what-was-researched table, verification accounting "0 unverified", explicit handoff to next stage owner).
 - Run parallel subagents (one per domain) plus a dedicated verification pass on numeric grids against primary standards.
 - Historical snapshots in `vers/`; canonical under `wrk/<project>/<room>/research/`.
 See `references/nutrak-research-package.md` for the full anatomy, anchors, and re-entry discipline.

@@ -64,5 +64,5 @@ configuration or install a router, detector, or dependency.
 The trust-boundary and attack taxonomy are informed by Liu et al., "Your Agent
 Is Mine: Measuring Malicious Intermediary Attacks on the LLM Supply Chain,"
 arXiv:2604.08407v1 (2026), https://arxiv.org/abs/2604.08407. The source is a
-preprint and is used conceptually. Team6-kit copies no source code, prompts, or
+preprint and is used conceptually. Protean Kit copies no source code, prompts, or
 attack payloads from the paper.

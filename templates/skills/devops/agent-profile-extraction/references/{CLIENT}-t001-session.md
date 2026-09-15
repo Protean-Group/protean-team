@@ -2,7 +2,7 @@
 # T-001 Session Detail — {CLIENT} Kit Extraction ({CLIENT})
 
 Real-world run of the agent-profile-extraction pipeline, built in the {CLIENT}
-ideation hub for the "sellable Team6 kit" idea (T-001). Verdict: PROMOTE,
+ideation hub for the "sellable Protean Team kit" idea (T-001). Verdict: PROMOTE,
 user-gated, skeleton assembled.
 
 ## The reconciliation story (counting units)

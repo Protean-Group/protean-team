@@ -14,7 +14,7 @@ metadata:
 
 # Knowledge Drift Monitoring
 
-> Detect drift and decay in a living knowledge structure (Team6's {CLIENT}, a project workspace, any markdown + JSON knowledge base) with standalone, cron-ready check scripts. The read-side complement to `{CLIENT}`: absorption writes truth in; monitoring catches it going stale.
+> Detect drift and decay in a living knowledge structure (Protean Team's {CLIENT}, a project workspace, any markdown + JSON knowledge base) with standalone, cron-ready check scripts. The read-side complement to `{CLIENT}`: absorption writes truth in; monitoring catches it going stale.
 
 ## When to Use
 
