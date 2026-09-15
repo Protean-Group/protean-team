@@ -22,11 +22,18 @@ no source code, prompts, anti-slop lists, or prose is copied into this repo.
 `autonovel` ships no committed `LICENSE` — both are therefore treated as
 weaker-than-committed grants and used for concept only. See `LICENSING.md`.
 
-v1.2.0 licensing note: **Desert Ant is referenced as an optional implementation
-only, never bundled.** This repo does not copy Desert Ant code, model files, or
-license text. Desert Ant models carry a separate source-available vendor
-license that is distinct from the Apache-2.0 kit layer and does not extend to
-it. See `choreography/local-preprocessing.md` and `LICENSING.md`.
+---
+
+## Partition (2026-09-15)
+
+This changelog is now **shared past** (entries before this line). Future changes
+will be split between **protean-team** (generic docs) and **protean-kit** (full
+docs with heavy references).
+
+- **protean-team** carries generic documentation (no OpenShorts/Desert Ant)
+- **protean-kit** carries full documentation (including implementation references)
+
+---
 
 v1.2.0 hosting note (canonical-site decision): the **official public Team6 site**
 is https://team6.askaconsult.com. The repository is the source of truth at

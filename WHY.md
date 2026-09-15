@@ -155,12 +155,6 @@ Why this shape, and not something grander:
   replacement for a reasoning model, never a provider/router change, and never
   a high-stakes judgment authority. Ordinary conversation, final synthesis, and
   legal/financial/security/architecture decisions are excluded by policy.
-- **It is honest about provenance.** Where an implementation (e.g. Desert Ant)
-  is referenced, its models carry a **separate vendor license** that is distinct
-  from the Apache-2.0 kit layer and does not extend to it. The kit links to
-  public implementation docs as an optional reference and copies no code,
-  prompts, or license text. Expected benefits are stated as intended outcomes;
-  no performance or cost numbers are invented.
 
 The adapter follows the same producer/verifier and verification culture that
 the v1.1.0 doctrine encoded: a guarded local call is a first-pass filter, not a
@@ -212,7 +206,6 @@ Hermes uses: open-source engine, paid service on top.
 - ✅ Automatic decision policy (Redact / Gist / Title / opt-in media) + "never applied" exclusions
 - ✅ Hold-for-review rule on address/numeric/uncertain Redact findings; first-pass filter, not anonymization
 - ✅ Adapter requirements (local, guarded, no raw-PII logs, availability + exit + JSON checks, provenance recording)
-- ✅ Desert Ant framed as one optional implementation; separate vendor model license distinct from Apache-2.0 kit
 - ✅ No invented performance/cost figures — expected benefits as intended outcomes
 - ✅ Public docs + website updated to v1.2.0 (README, WHY, CHANGELOG, registry/kit.yaml, LICENSING, index.html)
 - ✅ Canonical-site routing: official site `team6.askaconsult.com`; GitHub Pages is not used; visible nav back to `askaconsult.com/digital/`

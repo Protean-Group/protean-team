@@ -292,10 +292,6 @@
           <p class="up-body">Reviews, triage notes, and status comments define the unit being counted, count each item once at its highest impact, separate included work from requests and unresolved findings, map every row to its artifact, commit, test, and status, and label the evidence boundary. Missing evidence limits the claim instead of supporting it. This is writing guidance published in the kit's public skill templates, not tooling. Read <span class="mono">templates/skills/creative/external-writing-discipline/SKILL.md</span>.</p>
         </article>
         <article class="up-card">
-          <p class="up-title">16 / OPENSHORTS ROUTE (EXTERNAL, DOCS ONLY)</p>
-          <p class="up-body">Finished short-video production requests — where the user explicitly asks for a rendered short — route to OpenShorts, an external local-first tool Team6 has studied as a reference. This is a documentation route only: the kit does not bundle or run OpenShorts, does not render video by itself, and does not post, publish, or schedule anything on the user's behalf. Transcript, summary, and media-research requests stay on the existing media skills. Users install OpenShorts separately and check its current license and dependency terms before use. Read <span class="mono">registry/openshorts-route.yaml.example</span> and <span class="mono">choreography/openshorts-route.md</span>.</p>
-        </article>
-        <article class="up-card">
           <p class="up-title">17 / THE SAME MOVE TWICE IS A DEFECT</p>
           <p class="up-body">An agent that repeats an operation that returns nothing new is stuck, not working. The team stops, reports, and encodes the rule. Read <span class="mono">choreography/anti-loop-discipline.md</span>.</p>
         </article>
@@ -339,7 +335,7 @@
         </article>
       </div>
 
-      <p class="instance-foot">Any implementation must run locally, be guarded, log no raw personal data, check that the model exists before use and that its output parses after use, and record where each result came from before saving it. <strong>Desert Ant</strong> is one optional implementation on macOS — not a required part; its models carry a separate vendor license from the Apache-2.0 kit. Expected benefits are described as goals — no performance or cost numbers are invented. See <span class="mono">CHANGELOG.md</span>.</p>
+      <p class="instance-foot">Any implementation must run locally, be guarded, log no raw personal data, check that the model exists before use and that its output parses after use, and record where each result came from before saving it. Expected benefits are described as goals — no performance or cost numbers are invented. See <span class="mono">CHANGELOG.md</span>.</p>
     </div>
   </section>
 
@@ -416,7 +412,6 @@
             <li><span class="status-tag ok">✅</span><span class="status-text">Supervised, disk-backed operating workflow with privacy, provenance, and review boundaries</span></li>
             <li><span class="status-tag ok">✅</span><span class="status-text">Evidence and handoff contracts for artifacts, execution runs, safe share packets, and resumable work</span></li>
             <li><span class="status-tag ok">✅</span><span class="status-text">Safety gates for routing, side effects, cost, model policy, source checking, and external writing</span></li>
-            <li><span class="status-tag ok">✅</span><span class="status-text">Local-first OpenShorts routing guidance with no bundled renderer, auto-posting, or hidden dependency</span></li>
             <li><span class="status-tag ok">✅</span><span class="status-text">Reproducible release verification: deterministic gates, contract validators, fresh-clone checks, and CI</span></li>
           </ul>
         </div>
@@ -580,7 +575,7 @@
           <p class="zone-body">Settings files + service — never committed to this repo, never a fork of the engine.</p>
         </article>
       </div>
-      <p class="instance-foot">v1.2.0 note: optional local models (e.g. Desert Ant) carry a <strong>separate vendor license</strong> from this Apache-2.0 kit — the kit documents how to use them but bundles no implementation, model files, or license text. See <span class="mono">choreography/local-preprocessing.md</span> and <span class="mono">LICENSING.md</span>.</p>
+      <p class="instance-foot">v1.2.0 note: optional local models (e.g. local preprocessing) are documented but not bundled. See <span class="mono">CHANGELOG.md</span>.</p>
     </div>
   </section>
 

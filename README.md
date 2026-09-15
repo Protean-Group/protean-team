@@ -102,7 +102,7 @@ with route and byte/latency telemetry. It is a contract and an example config
 Start with `registry/io-delegation.yaml.example` and read
 `choreography/io-delegation.md`. Route identity follows the same
 provider/model/API-host rules as `choreography/model-policy.md`, and input must
-pass the local privacy/redaction policy (`choreography/local-preprocessing.md`)
+pass the local privacy/redaction policy (see protean-kit choreography/local-preprocessing.md)
 first. Thresholds are recommendations, not universal claims.
 
 ## Artifact contracts and resume handoffs
@@ -168,19 +168,6 @@ contract; `build/preflight/check.py` is a dependency-free validator that fails
 closed on missing fields, credential values, unbounded waits, or missing
 rollback. It is a Team6 internal operating pattern for side-effect and cost
 preflight. The Team6 Kanban board remains the authoritative task record.
-
-## OpenShorts route (external, docs only)
-
-Finished short-video production requests — where you explicitly ask for a rendered
-short — route to OpenShorts, an external local-first tool Team6 has studied as a
-reference. This is a documentation route only: Team6-kit does not bundle or run
-OpenShorts, does not render video by itself, and does not post, publish, or schedule
-anything on your behalf. Transcript, summary, and media-research requests stay on the
-existing media skills. You install OpenShorts separately and check its current license
-and dependency terms before use; the route ends at a local export you review.
-
-Start with `registry/openshorts-route.yaml.example` and read
-`choreography/openshorts-route.md`.
 
 ## Safe shareable run packet
 

@@ -75,20 +75,9 @@ grant and the CC BY-NC-SA 4.0 book terms apply to the source alone and do
 ### Local preprocessing model boundary (v1.2.0)
 
 v1.2.0 documents a **vendor-neutral local preprocessing adapter contract**
-(`choreography/local-preprocessing.md`); it does **not** bundle an
-implementation. Where a concrete implementation is referenced (e.g. Desert Ant),
-the boundary is explicit:
-
-- **Desert Ant is an optional reference, not a dependency** — its code, model
-  files, and license text are NOT copied into this repo.
-- **Separate vendor license.** Desert Ant models carry their own
-  **source-available vendor license** (not an OSI open-source license) that is
-  **distinct from the Apache-2.0 kit layer** and does not extend to it. The
-  model license governs the models; the kit license governs this repo.
-  Production distribution of those models is subject to the vendor's
-  attribution and monthly-active-device terms — see the vendor's public docs.
-- **No invented figures.** v1.2.0 states expected benefits as intended
-  outcomes only.
+(`choreography/local-preprocessing.md` in protean-kit); it does **not** bundle an
+implementation. For implementation references and licensing details, see
+protean-kit LICENSING.md.
 
 ### Public-domain hosting boundary (v1.2.0)
 
