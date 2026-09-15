@@ -313,6 +313,23 @@ See `choreography/funnel/` for the full SOPs.
 - **Honest blockers beat fabricated results.** If a tool, install, or network
   call fails, say so directly and try an alternative — never invent output.
 
+## 18. Commit serialization boundary
+
+Stage and commit must be serialized for a declared file set. When multiple
+agents share a worktree, only one agent may stage and commit a declared file set
+at a time. The lock boundary is the declared file set, not the entire repository.
+After staging, verify the commit identity (author, email) and file scope (only
+declared files) before releasing the lock. This rule stems from concurrent
+writers in one shared worktree contaminating commit attribution because the
+stage-and-commit step was not serialized. Serialize stage and commit for a
+declared file set under a single lock. Verify identity and file scope after
+commit. This is enforced in the shared orchestration contract, where repository
+write boundaries are enforced for every role.
+
+## 19. Peer-team cross-review
+
+A second team running the same roles on different models may review a staged PR. The handoff between the two teams is a written message carried by the operator, because no shared channel exists. The message states: the PR URL, the exact head SHA, what to verify, the condition that counts as PASS, and what to return on FAIL. A peer verdict is advisory unless that team holds merge authority. No team may report a peer's result it did not receive.
+
 ## 16. Anti-loop and self-improvement
 
 The contracts `choreography/anti-loop-discipline.md`,
