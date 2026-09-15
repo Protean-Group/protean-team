@@ -33,13 +33,13 @@ sequence doubles as the phase pipeline.
 
 | # | Role (instance) | Lane | Explicitly NOT |
 |---|---|---|---|
-| 0 | **Director** (Lugia) | Frame: ingest, delegate, decide | Hands-on coding |
+| 0 | **Director** | Frame: ingest, delegate, decide | Hands-on coding |
 | 1 | **Researcher** (RESEARCHER-001) | Evidence, prior art, constraint mapping | Architecture decisions |
-| 2 | **Architect** (Azaraki) | Analysis, structure, planning (thinking only) | Writing code |
-| 3 | **UX** (Shayba) | Human experience, interface design | Backend logic |
-| 4 | **Coder** (KodeKoot) | Software development (sole developer) | Strategy prose |
-| 5 | **QA** (Halakukhan) | Adversarial verification, scope-cut, loop-back | Feature expansion |
-| 6 | **Director** (Lugia) | Integrate, summarize, report | Hands-on coding |
+| 2 | **Architect** | Analysis, structure, planning (thinking only) | Writing code |
+| 3 | **UX** | Human experience, interface design | Backend logic |
+| 4 | **Coder** | Software development (sole developer) | Strategy prose |
+| 5 | **QA** | Adversarial verification, scope-cut, loop-back | Feature expansion |
+| 6 | **Director** | Integrate, summarize, report | Hands-on coding |
 
 **Invariants that make the sequence correct:**
 
@@ -48,7 +48,7 @@ sequence doubles as the phase pipeline.
 - **Scope-cutting and feature-extension-prevention belong to QA** — they are
   not a separate early phase and not the coder's job.
 - **UX is a single design role**, not two slots. Ideation, human-experience,
-  and interface design all live in the one UX lane (Shayba).
+  and interface design all live in the one UX lane.
 - Role ownership never changes. Post-QA dynamic delegation executes *within*
   roles only; it never blurs a specialist into a generalist.
 
@@ -57,7 +57,7 @@ twice and QA/Scoper as a distinct early stage): dynamic-over-specialization
 broke down — the first agent to receive instruction executed indiscriminately,
 reducing specialists to reviewers, eroding the coder's dev role, and letting
 the architect drift into code. Un-gated advancement also let defects compound.
-The verified operating records (Eldunari `lugia` doctrine, 2026-08-31 onward)
+The verified operating records (team choreography, 2026-08-31 onward)
 restore strict lanes and gate every stage. See `governance.md` §2.
 
 ## 3. Phase-gated pipeline (Definition of Done per stage)
@@ -243,6 +243,17 @@ doctrine.
 - **Standardized handoff brief**, every stage: `context / locked decisions /
   assumptions / done / next / OPEN`. The `done` item lists exactly the
   verifiable artifact(s) produced; `OPEN` lists anything uncommitted.
+- **Refuse to spawn on an incomplete brief.** A required field left empty or
+  marked `TBD` is not a gap to fill later. It is a unit that has not been scoped
+  yet. The orchestrator MUST NOT dispatch a worker on a partially filled brief.
+  Resolve it first: scope the missing field into a discrete unit, fill it, then
+  spawn. This applies to the artifact-contract fields (`task_id`, `project`,
+  `phase`, `status`, `runtime_state`, `last_stable_phase`, `resume_phase`,
+  `expected_artifacts`, `required_sections`, `size_bounds`, `tests`,
+  `evidence_refs`) and to the handoff-brief fields (`context`,
+  `locked_decisions`, `assumptions`, `done`, `next`, `OPEN`). The contract checker
+  rejects any contract with a required field missing. See `artifact-contract.md`
+  and `examples/artifact-contract.invalid.yaml`.
 - **JIT handoff + producer-committed signals.** Forward each stable partial
   immediately, marked **STABLE** vs **DRAFT**. A downstream gate may only poll
   a signal the producer's brief actually commits to writing — introduce marker
@@ -313,6 +324,49 @@ See `choreography/funnel/` for the full SOPs.
 - **Honest blockers beat fabricated results.** If a tool, install, or network
   call fails, say so directly and try an alternative — never invent output.
 
+## 16. Anti-loop and self-improvement
+
+The contracts `choreography/anti-loop-discipline.md`,
+`choreography/self-improving-flywheel.md`, and
+`choreography/open-source-contribution.md` encode incident learning and the
+open-source contribution path. A repeated operation that returns no new
+information is a defect; stop and encode the rule that prevents it. The fix is
+the encoded rule, not another retry.
+
+---
+
+*Choreography v1.1.0 — the system that makes the personas a team. Revision:
+corrected single-pass role sequence + supervision, durable-state, provenance,
+and served-truth doctrine (2026-09-09). See `../CHANGELOG.md`.*
+
+## 17. Provider-Neutral Orchestration Economics (B01 Reference)
+
+Reference patterns for turn-dense orchestration, cost-bounded routing, and context economics. Provider-neutral; does not require any specific installer or hooks.
+
+### Turn Density and Cache Horizon
+
+- **Dense turn policy:** When consecutive turns occur within the same session, group related actions into a single turn whenever the outcome is deterministic.
+- **Cache horizon boundaries:** For providers with turn-cache semantics, emit bounded summaries after N turns (default N=5) and reset context to prevent cache pollution.
+- **Waiting windows:**
+  - Short waits (< 30s) remain in context
+  - Medium waits (30s–5min) trigger a bounded digest
+  - Long waits (> 5min) require explicit session checkpoint
+
+### Bounded Digest Rules
+
+- **Digest trigger:** After N=5 dense turns without external feedback
+- **Digest content:** Only status deltas, blocker flags, and next-action commitments
+- **Digest format:** Machine-readable compact summary (JSON-compatible when supported)
+
+### Routing and Configuration Principles
+
+- **Additive config only:** Reference patterns extend existing choreography without renaming surfaces
+- **No provider locks:** All economic rules apply regardless of underlying model
+- **Fallback semantics:** When provider-specific features are unavailable, use generic equivalents (e.g., turn counters instead of native cache APIs)
+
+
+
+
 ## 18. Commit serialization boundary
 
 Stage and commit must be serialized for a declared file set. When multiple
@@ -328,19 +382,6 @@ write boundaries are enforced for every role.
 
 ## 19. Peer-team cross-review
 
-A second team running the same roles on different models may review a staged PR. The handoff between the two teams is a written message carried by the operator, because no shared channel exists. The message states: the PR URL, the exact head SHA, what to verify, the condition that counts as PASS, and what to return on FAIL. A peer verdict is advisory unless that team holds merge authority. No team may report a peer's result it did not receive.
+A second team running the same roles on different models may review a staged PR. The handoff between the two teams is a written message carried by the operator, because no shared channel exists. The message states the PR URL, the exact head SHA, what to verify, the condition that counts as PASS, and what to return on FAIL.
 
-## 16. Anti-loop and self-improvement
-
-The contracts `choreography/anti-loop-discipline.md`,
-`choreography/self-improving-flywheel.md`, and
-`choreography/open-source-contribution.md` encode incident learning and the
-open-source contribution path. A repeated operation that returns no new
-information is a defect; stop and encode the rule that prevents it. The fix is
-the encoded rule, not another retry.
-
----
-
-*Choreography v1.1.0 — the system that makes the personas a team. Revision:
-corrected single-pass role sequence + supervision, durable-state, provenance,
-and served-truth doctrine (2026-09-09). See `../CHANGELOG.md`.*
+A peer verdict is advisory unless that team holds merge authority. No team may report a peer's result it did not receive.
