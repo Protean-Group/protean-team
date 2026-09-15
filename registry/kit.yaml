@@ -32,7 +32,7 @@ description: >
   orchestration runtime.
 
 registry: git@github.com:{ORG}/protean-kit.git
-home: https://protean-team.askaconsult.com/      # intended public Protean Team site (v1.2.0 public-domain decision)
+home: https://proteus.askaconsult.com/      # intended public Protean Team site (v1.2.0 public-domain decision)
 source_mirror: ""  # GitHub Pages is not used; canonical site is home
 repo: https://github.com/Protean-Group/protean-kit
 links_back: https://askaconsult.com/digital/  # Protean Team site -> ASKA Digital

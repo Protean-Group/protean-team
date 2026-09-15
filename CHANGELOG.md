@@ -36,7 +36,7 @@ docs with heavy references).
 ---
 
 v1.2.0 hosting note (canonical-site decision): the **official public Protean Team site**
-is https://protean-team.askaconsult.com. The repository is the source of truth at
+is https://proteus.askaconsult.com. The repository is the source of truth at
 https://github.com/Protean-Group/protean-kit. GitHub Pages is not used and the old
 Pages site was taken down. The canonical site carries visible navigation back to
 https://askaconsult.com/digital/. The deployment and DNS boundary is managed
@@ -88,12 +88,12 @@ outside this repository.
 - **Evidence:** [VERIFIED — internal operating record]
 
 - **What:** correct the canonical-site labels in the README. The canonical
-  public documentation site for Protean Kit is `protean-team.askaconsult.com`; the
-  ASKA corporate page at `www.askaconsult.com/protean-team` is the service listing.
+  public documentation site for Protean Kit is `proteus.askaconsult.com`; the
+  ASKA corporate page at `https://proteus.askaconsult.com/` is the service listing.
   The README previously called the corporate page the "official site" and
   the canonical site the "technical guide".
 - **Why it changed:** the README labels contradicted the v1.2.0 canonical-site
-  decision recorded below, which names `protean-team.askaconsult.com` as the official
+  decision recorded below, which names `proteus.askaconsult.com` as the official
   public Protean Team site. No code, layout, or route behavior changed.
 
 - **What:** document a resume-channel redirect. A finished one-shot worker

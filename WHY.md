@@ -208,7 +208,7 @@ Hermes uses: open-source engine, paid service on top.
 - ✅ Adapter requirements (local, guarded, no raw-PII logs, availability + exit + JSON checks, provenance recording)
 - ✅ No invented performance/cost figures — expected benefits as intended outcomes
 - ✅ Public docs + website updated to v1.2.0 (README, WHY, CHANGELOG, registry/kit.yaml, LICENSING, index.html)
-- ✅ Canonical-site routing: official site `protean-team.askaconsult.com`; GitHub Pages is not used; visible nav back to `askaconsult.com/digital/`
+- ✅ Canonical-site routing: official site `proteus.askaconsult.com`; GitHub Pages is not used; visible nav back to `askaconsult.com/digital/`
 
 ### v1.1.0 — operating upgrades (2026-09-09)
 

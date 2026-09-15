@@ -83,8 +83,8 @@ protean-kit LICENSING.md.
 
 v1.2.0 adopts the canonical-site decision for the Protean Team site:
 
-- **Canonical public site:** `https://protean-team.askaconsult.com/`.
-- **Repository/source of truth:** `https://github.com/Protean-Group/protean-kit`.
+- **Canonical public site:** `https://proteus.askaconsult.com/`.
+- **Repository/source of truth:** `https://github.com/Protean-Group/protean-team`.
 - **GitHub Pages:** not used. The old Pages site was taken down.
 - **Deployment boundary:** the canonical site is served by the ASKA-managed
   Protean Team deployment; DNS and deployment settings are outside this repo.
