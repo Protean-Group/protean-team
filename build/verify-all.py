@@ -12,7 +12,11 @@ ORDER (as documented in choreography/release-gates.md):
   4. check-artifact-contract.py self-test
   5. preflight/check.py self-test
   6. report/check.py self-test
-  7. fresh-clone test (generate.py fork-dryrun check)
+  7. check-contracts.py — aggregate contract gate (artifact-contract,
+     preflight, report, grouped scored-rollout, and declarative reward
+     catalogue validators, each with both fixtures)
+  8. fresh-clone test (generate.py fork-dryrun check)
+  9. review-repair checker self-test + fixture corpus
 
 Exit: 0 = all gates pass; 1 = any gate failed.
 """
@@ -93,7 +97,11 @@ def main():
     gates.append(("report/check self-test",
                   [sys.executable, os.path.join(HERE, "report", "check.py"), "--selftest"]))
 
-    # 7. fresh-clone test (fork-dryrun.sh)
+    # 7. aggregate contract gate (all contract validators + fixtures)
+    gates.append(("check-contracts aggregate",
+                  [sys.executable, os.path.join(HERE, "check-contracts.py")]))
+
+    # 8. fresh-clone test (fork-dryrun.sh)
     fork_dryrun = os.path.join(HERE, "fork-dryrun.sh")
     if os.path.isfile(fork_dryrun):
         # Use current repo as source and 'main' as branch; no private paths.
@@ -103,6 +111,23 @@ def main():
         # Alternative: verify generate.py works in fork mode
         gates.append(("fresh-clone generate test",
                       [sys.executable, os.path.join(HERE, "generate.py"), "--help"]))
+
+    # 9. unique-headings check
+    gates.append(("check-unique-headings",
+                  [sys.executable, os.path.join(HERE, "check-unique-headings.py")]))
+
+    # 10. internal-names check
+    gates.append(("check-internal-names",
+                  [sys.executable, os.path.join(HERE, "check-internal-names.py"), ROOT]))
+
+    # 9. review-repair checker — self-test + fixture corpus. Exercises the
+    #    guarded review/repair contract (choreography/review-repair-workflow.md)
+    #    across the review, adversarial, browser, and artifact lanes.
+    review_repair = os.path.join(HERE, "review-repair", "check.py")
+    gates.append(("review-repair self-test",
+                  [sys.executable, review_repair, "--selftest"]))
+    gates.append(("review-repair fixtures",
+                  [sys.executable, review_repair, "--fixtures"]))
 
     # Run all gates
     results = []
