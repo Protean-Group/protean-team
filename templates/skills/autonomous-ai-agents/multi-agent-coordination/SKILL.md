@@ -91,7 +91,7 @@ If the team includes a stress-testing role:
 - references/coordination-log-the-search.md — Session transcript of the "The Search" coordination (essay + tracker + visuals, September 2026)
 - references/{CLIENT} — {CLIENT} first night: architecture, failures, role system evolution (August 2026)
 - references/coordination-primitives.md — Task declaration, silence/pause directives, approval gates, positive reinforcement encoding (August 2022)
-- references/team6-coordination-{CLIENT}.md — Team6 formalization: contribution order, SOUL.md as identity carrier, model config framework, cost-benefit analysis, anti-patterns (August 2026)
+- references/protean-team-coordination-{CLIENT}.md — Protean Team formalization: contribution order, SOUL.md as identity carrier, model config framework, cost-benefit analysis, anti-patterns (August 2026)
 
 ## Role Design
 

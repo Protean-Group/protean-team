@@ -6,13 +6,13 @@
 > must exist, what state the runtime is in, and exactly what the next worker
 > may and may not touch.
 >
-> **System of record:** Team6 Kanban remains the state authority. A contract
+> **System of record:** Protean Team Kanban remains the state authority. A contract
 > file is a per-handoff snapshot written *out of* the Kanban record so a cold
 > worker can resume without re-reading the whole board. It never replaces or
 > overrides the Kanban task state; if the two disagree, Kanban wins and the
 > contract is rewritten from it.
 >
-> **Provenance:** this is a Team6 internal operating record for artifact handoffs.
+> **Provenance:** this is a Protean Team internal operating record for artifact handoffs.
 > It was designed to solve resume/feedback boundary issues in Kanban workflows.
 > It is not derived from external code or documentation.
 

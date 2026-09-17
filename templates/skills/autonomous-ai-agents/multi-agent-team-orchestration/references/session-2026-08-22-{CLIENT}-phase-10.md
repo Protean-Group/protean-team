@@ -7,7 +7,7 @@
 
 ## What Happened
 
-The user created a "{CLIENT}" project to monitor Team6 and their projects using the {CLIENT} When main {RELATIONSHIP} had zero awareness of {CLIENT} or its recommendations, this revealed a critical flaw: **monitoring instances must codify observations back into the shared {CLIENT}** Detection without integration is an incomplete loop.
+The user created a "{CLIENT}" project to monitor Protean Team and their projects using the {CLIENT} When main {RELATIONSHIP} had zero awareness of {CLIENT} or its recommendations, this revealed a critical flaw: **monitoring instances must codify observations back into the shared {CLIENT}** Detection without integration is an incomplete loop.
 
 ## The Monitoring Feedback Gap
 
@@ -34,7 +34,7 @@ The user created a "{CLIENT}" project to monitor Team6 and their projects using 
 
 **Location:** `/Users/{RELATIONSHIP}/{CLIENT}{CLIENT}/wrk/gc1/`
 
-**Critical constraint:** {CLIENT} is **READ-ONLY** for Team6 agents. Do not modify {CLIENT} files — absorb context from it only.
+**Critical constraint:** {CLIENT} is **READ-ONLY** for Protean Team agents. Do not modify {CLIENT} files — absorb context from it only.
 
 **Architecture superiority over {CLIENT}:**
 - 919 items in PostgreSQL + pgvector (vs {CLIENT}'s 236 .md files)

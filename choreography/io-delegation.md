@@ -96,11 +96,11 @@ Record the **routing event and its metadata**, never the sensitive payload.
 ## Thresholds are recommendations, not claims
 
 This contract defines *bounded routing*, not a measured outcome. No specific
-savings percentage is claimed as Team6 evidence. The source vendor's published
+savings percentage is claimed as Protean Team evidence. The source vendor's published
 figure is treated as a **self-reported vendor claim**, not a universal result:
 
 > Spotify reports a roughly 90% mean bulk-read saving in a four-scenario Java
-> monorepo test; Team6 adopts only the routing principle and does not claim
+> monorepo test; Protean Team adopts only the routing principle and does not claim
 > this result.
 
 ## Compatibility
@@ -120,5 +120,5 @@ figure is treated as a **self-reported vendor claim**, not a universal result:
 A concrete, vendor-neutral example schema is in
 `registry/io-delegation.yaml.example`. It is a config **example only** — copy
 it into your own deployment settings and fill in verified worker identities and
-bounds; nothing in the Team6 open-core build enables this pattern by default or
+bounds; nothing in the Protean Team open-core build enables this pattern by default or
 edits a user's Hermes profile to do so.

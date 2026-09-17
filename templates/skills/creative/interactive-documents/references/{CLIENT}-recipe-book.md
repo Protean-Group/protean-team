@@ -7,7 +7,7 @@ Traditional recipes and formulas for healthy consumables. Digital mini recipe bo
 ## Title
 "{HABIT} {HABIT}: Timeless Remedies for Modern Wellness"
 - Compiled for {HABIT}
-- by Ahraz {RELATIONSHIP} and Team6
+- by Ahraz {RELATIONSHIP} and Protean Team
 
 ## Final 10 Recipes
 1. Kitchari (Ayurvedic rice-lentil porridge)

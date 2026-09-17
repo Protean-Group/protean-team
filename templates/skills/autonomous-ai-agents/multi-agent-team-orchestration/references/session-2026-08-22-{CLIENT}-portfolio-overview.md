@@ -2,7 +2,7 @@
 # Session {CLIENT} — {CLIENT} kickoff & cross-project portfolio overview
 
 ## Context
-User created project "{CLIENT}" (`{CLIENT}`): monitoring Team6 projects through the {CLIENT} First task: an overview, big picture, of everything that has been and is being worked on across all projects.
+User created project "{CLIENT}" (`{CLIENT}`): monitoring Protean Team projects through the {CLIENT} First task: an overview, big picture, of everything that has been and is being worked on across all projects.
 
 ## What happened
 
@@ -10,7 +10,7 @@ User created project "{CLIENT}" (`{CLIENT}`): monitoring Team6 projects through 
 User gives name + workspace path + one-line idea → orchestrator creates the desktop Project anchored to the path, scaffolds the standard structure (PROJECTS/, OUTPUTS/, TEMPLATES/, LOG/), writes IDEA.md capturing the concept verbatim, then surfaces scope decisions back to the user (what to monitor, cadence, drift definition).
 
 ### The {CLIENT} coverage gap
-The premise of {CLIENT} — reading NEXUS.md / ANIMA.md / index.md in each Team6 workspace — failed on contact with reality:
+The premise of {CLIENT} — reading NEXUS.md / ANIMA.md / index.md in each Protean Team workspace — failed on contact with reality:
 - Live {CLIENT} structures exist ONLY at `/Users/{RELATIONSHIP}/.hermes/{CLIENT}` (canonical) and in `{CLIENT} - do not alter/`.
 - **No active project workspace carries a live {CLIENT} layer.** Absorption writes to the canonical store, not back into each workspace.
 - Lesson: before designing anything that reads per-workspace knowledge structures, verify those structures actually exist where you expect them. One `find` pass beats an architecture built on absent files.

@@ -3,7 +3,7 @@
 This is a compact, tool-neutral contract for work performed with an AI coding
 agent. It is derived from the public conceptual guidance in
 [jnMetaCode/ai-coding-guide](https://github.com/jnMetaCode/ai-coding-guide),
-snapshot c5dde338c68adaac6cffc70ab11f1b1b22e70b0f. It is adapted for Team6's
+snapshot c5dde338c68adaac6cffc70ab11f1b1b22e70b0f. It is adapted for Protean Team's
 existing ownership, review, and verification rules. It is not a copied template
 or an instruction to install another tool.
 

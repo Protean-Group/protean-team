@@ -18,7 +18,7 @@ Class-level discipline for making a framework consumable by a stranger — anoth
 
 ## When to Use
 
-- A framework/core/library is "done" and another team (Team6 instances, external fork teams) will build on top of it
+- A framework/core/library is "done" and another team (Protean Team instances, external fork teams) will build on top of it
 - The user asks for a handoff/onboarding package for a repo
 - A plugin-architecture codebase needs its plugin contract documented
 - You want future sessions to resume work without re-deriving the API

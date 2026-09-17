@@ -3,7 +3,7 @@
 name: interactive-documents
 description: "Build interactive HTML books with API content, SVG visuals."
 version: 1.0.0
-author: {RELATIONSHIP} (Team6)
+author: {RELATIONSHIP} (Protean Team)
 license: MIT
 platforms: [macos, linux, windows]
 ---

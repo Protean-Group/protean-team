@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-extraction-inventory.py — Profile extraction audit for T-001 (Sellable Team6 kit).
+extraction-inventory.py — Profile extraction audit for T-001 (Sellable Protean Team kit).
 
 PURPOSE
   Foundation for the extraction audit. Walks every Hermes profile dir and

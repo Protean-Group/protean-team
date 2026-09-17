@@ -10,7 +10,7 @@ platforms: [linux, macos, windows]
 
 # Hermes Session Model Overrides (state.db)
 
-> config.yaml sets profile DEFAULTS; each chat's LAST-USED model/provider is stored per-session and restored on resume — so old chats stay pinned to outdated models even after the global config is correct. This skill covers auditing and bulk-resetting those overrides across all Team6 profiles.
+> config.yaml sets profile DEFAULTS; each chat's LAST-USED model/provider is stored per-session and restored on resume — so old chats stay pinned to outdated models even after the global config is correct. This skill covers auditing and bulk-resetting those overrides across all Protean Team profiles.
 
 ## When to Use
 
@@ -19,7 +19,7 @@ platforms: [linux, macos, windows]
 - Before an audit: "which sessions deviate from the profile default?"
 - Bulk reset across many profiles at once ({CLIENT} operation: 8 profiles, 174 rows, 4 desynced rows found)
 - Recurring full-fleet sweeps (user: "still getting timeouts — run through all
-  Team6 sessions/group chats again"). One command: run
+  Protean Team sessions/group chats again"). One command: run
   `hermes-session-model-migration/scripts/audit_model_state.py` — read-only,
   covers config defaults, session rows, desync class, cron pins, delegation.
 

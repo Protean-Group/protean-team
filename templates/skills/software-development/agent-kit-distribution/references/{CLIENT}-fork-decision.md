@@ -1,5 +1,5 @@
 <!-- GENERICIZED: 4×{CLIENT}, 10×{RELATIONSHIP} | source: skills/software-development/agent-kit-distribution/references/{CLIENT} -->
-# Worked case: {CLIENT} T-001 Team6 kit — fork decision ({CLIENT}/29)
+# Worked case: {CLIENT} T-001 Protean Team kit — fork decision ({CLIENT}/29)
 
 ## The correction chain
 
@@ -48,4 +48,4 @@ Update-safety: engine updates touch upstream files only; profiles/kits/workspace
 ## On-disk artifacts
 
 - `OUTPUTS/fork-architecture.md` (locked, 8KB) — the full architecture doc
-- `PROJECTS/T001-team6-kit.md` — distribution model rev 2 recorded
+- `PROJECTS/T001-protean-kit.md` — distribution model rev 2 recorded

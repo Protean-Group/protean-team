@@ -8,7 +8,7 @@ description: Use when a task needs driving the user's real logged-in Chrome (CDP
 
 Installed {CLIENT} via `uv tool install --python 3.12` (macos-harness 0.1.x + browser-harness). One-week-old experimental repos — treat upgrades as reviewed changes. **Upgrade protocol (do not skip): re-audit both repos against the new commit → update THIS canonical copy ({RELATIONSHIP}) first → redistribute to all eight profiles with fresh checksums → {RELATIONSHIP} verifies independently.** Audit-before-distribute: a bump is when new code enters eight trust boundaries at once.
 
-## Split-of-duties convention (Team6, {RELATIONSHIP}-approved)
+## Split-of-duties convention (Protean Team, {RELATIONSHIP}-approved)
 - cua-driver (`computer_use`) owns `see`/`click`/`type`/`key` — default for all desktop interaction.
 - macos-harness ONLY for: (a) real-Chrome CDP via browser-harness `browser.*`, (b) persistent-process Python composition when one-action-per-call can't do it, (c) bottom rung of the verify→escalate ladder after cua-driver returns `unverifiable`/`suspected_noop`.
 

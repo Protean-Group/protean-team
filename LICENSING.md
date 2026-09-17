@@ -1,4 +1,4 @@
-# Licensing — Team6-kit
+# Licensing — Protean Kit
 
 This repo is a STANDALONE product built on the Hermes engine. It is not a
 git-fork of Hermes: no upstream source or history is copied into this tree.
@@ -13,7 +13,7 @@ git-history boundary. Read this before contributing.
 | Engine-derived | `build/` tooling (scanner, gates, generator, manifest), generic skills under `templates/skills/` | **MIT — provenance today, obligation on arrival** | The repo's current content is entirely our own authored work (Apache-2.0). The MIT zone is a FORWARD CONTRACT: MIT attaches when engine-derived code actually lands here (the setup-agent PR, any vendored tooling). Today there are no MIT files in this tree; the zone names what the future upstream surface will be. Nothing here carries instance data. |
 | Kit layer | `choreography/`, `templates/personas/`, `registry/kit.yaml`, `AUDIT/` | **Apache-2.0** | Our identity archetypes, orchestration contract, governance, and build evidence. |
 | Proprietary | `registry/packs/` parameter files | **Proprietary by contract** | Vertical packs are service deliverables — NEVER committed to this repo. The `packs/README.md` shape is public; the parameter files are not. |
-| Product brand | `README.md`, `LICENSE` | Apache-2.0 (README), Apache-2.0 (LICENSE) | The product name `Team6-kit` is our brand. |
+| Product brand | `README.md`, `LICENSE` | Apache-2.0 (README), Apache-2.0 (LICENSE) | The product name `Protean Kit` is our brand. |
 
 ## Rules
 
@@ -75,36 +75,25 @@ grant and the CC BY-NC-SA 4.0 book terms apply to the source alone and do
 ### Local preprocessing model boundary (v1.2.0)
 
 v1.2.0 documents a **vendor-neutral local preprocessing adapter contract**
-(`choreography/local-preprocessing.md`); it does **not** bundle an
-implementation. Where a concrete implementation is referenced (e.g. Desert Ant),
-the boundary is explicit:
-
-- **Desert Ant is an optional reference, not a dependency** — its code, model
-  files, and license text are NOT copied into this repo.
-- **Separate vendor license.** Desert Ant models carry their own
-  **source-available vendor license** (not an OSI open-source license) that is
-  **distinct from the Apache-2.0 kit layer** and does not extend to it. The
-  model license governs the models; the kit license governs this repo.
-  Production distribution of those models is subject to the vendor's
-  attribution and monthly-active-device terms — see the vendor's public docs.
-- **No invented figures.** v1.2.0 states expected benefits as intended
-  outcomes only.
+(`choreography/local-preprocessing.md` in protean-kit); it does **not** bundle an
+implementation. For implementation references and licensing details, see
+protean-kit LICENSING.md.
 
 ### Public-domain hosting boundary (v1.2.0)
 
-v1.2.0 adopts the canonical-site decision for the Team6 site:
+v1.2.0 adopts the canonical-site decision for the Protean Team site:
 
-- **Canonical public site:** `https://team6.askaconsult.com/`.
-- **Repository/source of truth:** `https://github.com/ahrazzle/team6-kit`.
+- **Canonical public site:** `https://proteus.askaconsult.com/`.
+- **Repository/source of truth:** `https://github.com/Protean-Group/protean-team`.
 - **GitHub Pages:** not used. The old Pages site was taken down.
 - **Deployment boundary:** the canonical site is served by the ASKA-managed
-  Team6 deployment; DNS and deployment settings are outside this repo.
-- **Visible navigation back to ASKA Digital:** the Team6 site (`index.html`)
+  Protean Team deployment; DNS and deployment settings are outside this repo.
+- **Visible navigation back to ASKA Digital:** the Protean Team site (`index.html`)
   carries visible nav + footer links back to `https://askaconsult.com/digital/`.
 
 ## Provenance
 
 - Engine: Hermes by Nous Research — MIT (https://github.com/NousResearch/hermes-agent)
-- This repo: `Team6-kit` — Apache-2.0 core + proprietary packs by contract
+- This repo: `Protean Kit` — Apache-2.0 core + proprietary packs by contract
 - `AUDIT/fork-commit-1.md` — the first commit's cleanliness evidence (surface
   scan, staged-tree manifest, invariant check, verification lineage)

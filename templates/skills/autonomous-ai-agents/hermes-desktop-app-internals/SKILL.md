@@ -3,7 +3,7 @@
 name: hermes-desktop-app-internals
 description: "Patch packaged Hermes desktop app for hardcoded behavior."
 version: 1.0.0
-author: {RELATIONSHIP} ({RELATIONSHIP}), Team6
+author: {RELATIONSHIP} ({RELATIONSHIP}), Protean Team
 license: MIT
 platforms: [macos, linux, windows]
 ---
@@ -57,9 +57,9 @@ Do NOT tell yourself a committed source change will ride through updates. The up
 
 => The durable fix is a **launchd watchdog** that detects the clobber and re-patches automatically:
 
-- `~/.hermes/scripts/team6-caps-watchdog.sh` — thin launcher that calls `~/.hermes/scripts/patch-groupchat-caps.py` and classifies EVERY run by its exit code: `0` = override present (patched or already applied) → clear alert, re-sign only if a patch actually landed; `3` = no cap pattern matched → build shape changed, caps unverified → write `~/.hermes/logs/team6-caps-watchdog.ALERT`, log an ALERT line, fire a macOS notification, exit 1; any other rc = real error → alert. Target values are now 9999/9999/9999 (effectively-unlimited), members stays 6.
-- `~/Library/LaunchAgents/com.team6.caps-watchdog.plist` — RunAtLoad + hourly StartInterval; it calls the same script path, so a script fix goes live on the next run without reload.
-- Log: `~/.hermes/logs/team6-caps-watchdog.log`. Proven {CLIENT}: simulated clobber → watchdog re-patched + re-signed in ~1s; three-state harness verified (upstream → patch, patched → no-op, unrelated pattern → ALERT + exit 1).
+- `~/.hermes/scripts/protean-caps-watchdog.sh` — thin launcher that calls `~/.hermes/scripts/patch-groupchat-caps.py` and classifies EVERY run by its exit code: `0` = override present (patched or already applied) → clear alert, re-sign only if a patch actually landed; `3` = no cap pattern matched → build shape changed, caps unverified → write `~/.hermes/logs/protean-caps-watchdog.ALERT`, log an ALERT line, fire a macOS notification, exit 1; any other rc = real error → alert. Target values are now 9999/9999/9999 (effectively-unlimited), members stays 6.
+- `~/Library/LaunchAgents/com.protean.caps-watchdog.plist` — RunAtLoad + hourly StartInterval; it calls the same script path, so a script fix goes live on the next run without reload.
+- Log: `~/.hermes/logs/protean-caps-watchdog.log`. Proven {CLIENT}: simulated clobber → watchdog re-patched + re-signed in ~1s; three-state harness verified (upstream → patch, patched → no-op, unrelated pattern → ALERT + exit 1).
 
 **Never let a watchdog treat "no match" as success.** A quiet watchdog on a shape change is a silently-reverted cap that pages nobody — the exact failure the watchdog was built to prevent. State 3 (unknown shape) must ALERT, not no-op.
 
@@ -86,7 +86,7 @@ Match by value pattern, not names (both minified variable names and bundle filen
 # rc=3 = no cap pattern matched => build shape changed, caps UNVERIFIED.
 python3 ~/.hermes/scripts/patch-groupchat-caps.py; echo "rc=$?"   # expect rc=0
 node --check "<real-bundle>" && echo SYNTAX OK     # bundle still parses
-bash ~/.hermes/scripts/team6-caps-watchdog.sh && tail -3 ~/.hermes/logs/team6-caps-watchdog.log
+bash ~/.hermes/scripts/protean-caps-watchdog.sh && tail -3 ~/.hermes/logs/protean-caps-watchdog.log
 codesign --verify --deep --strict "<Hermes.app>" && echo SIGNATURE OK
 # spot-check the 9999 values landed in the group driver (structural anchor):
 grep -oE '!i\(\)\|\|[a-z]>=[0-9]+\)\{i\(\)\?s=\x60capped\x60' "<real-bundle>"  # shows the capped guard
@@ -98,4 +98,4 @@ Then relaunch the app and confirm behavior in a live room (e.g. a 4+ message exc
 
 - `references/bot-mode-group-chat-caps.md` — the full cap-patch recipe: exact constants, minified-name evolution across builds, and the {CLIENT} build-3 INLINED-shape update (why the declaration regex died + the 6 structural-anchor sites).
 - `scripts/patch-groupchat-caps.py` — the current context-anchored patcher (6 inlined cap sites, idempotent, rc=0 live / rc=3 shape-changed canary / rc=1 error). Port to `~/.hermes/scripts/` and run directly or via the watchdog.
-- `scripts/team6-caps-watchdog.sh` — the self-healing watchdog (launcher that calls the patcher; classifies by exit code: 0=override live, 3=shape changed → ALERT + exit 1, else error → alert). Port to `~/.hermes/scripts/` + `~/Library/LaunchAgents/com.team6.caps-watchdog.plist` (RunAtLoad + hourly) on any machine that needs the caps override.
+- `scripts/protean-caps-watchdog.sh` — the self-healing watchdog (launcher that calls the patcher; classifies by exit code: 0=override live, 3=shape changed → ALERT + exit 1, else error → alert). Port to `~/.hermes/scripts/` + `~/Library/LaunchAgents/com.protean.caps-watchdog.plist` (RunAtLoad + hourly) on any machine that needs the caps override.

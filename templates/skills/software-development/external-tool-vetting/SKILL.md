@@ -6,7 +6,7 @@ description: Use when vetting an external tool or service for adoption.
 
 # External Tool Vetting
 
-Team6 protocol for adopting third-party tools the user hands over. Routing per {RELATIONSHIP}: the adopter claims + recons → the researcher audits (full implementation, not README) → {RELATIONSHIP} decides install scope. This class of work recurs every time the user finds something "useful to add to toolset" — follow the phases in order.
+Protean Team protocol for adopting third-party tools the user hands over. Routing per {RELATIONSHIP}: the adopter claims + recons → the researcher audits (full implementation, not README) → {RELATIONSHIP} decides install scope. This class of work recurs every time the user finds something "useful to add to toolset" — follow the phases in order.
 
 ## When to Use
 

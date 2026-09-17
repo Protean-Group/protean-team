@@ -120,7 +120,7 @@ Each dispatched stage carries a contract with these fields:
 ## 5. Supervised autonomous research loops
 
 Long-horizon research is run as a **supervised, ledgered loop** — never as
-silent indefinite autonomy. This is the Team6 adaptation of the autoresearch /
+silent indefinite autonomy. This is the Protean Team adaptation of the autoresearch /
 autonovel mechanism: the "loop forever / never stop" clause is **rejected** in
 favor of explicit pause, checkpoint, and interrupt points.
 

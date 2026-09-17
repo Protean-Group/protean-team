@@ -88,7 +88,7 @@ When proliferating a config change across many profiles (e.g., auxiliary models,
 3. Verify on disk after — read back the actual file, do not trust the CLI confirmation.
 4. Accept that comments will be stripped. Document this tradeoff in the setup guide.
 
-**Roster is 8 profiles, not 6.** Team6 core = {RELATIONSHIP}, {RELATIONSHIP}, {RELATIONSHIP}, {RELATIONSHIP}, {RELATIONSHIP}, {RELATIONSHIP}. Two auxiliary profiles also exist and are part of "everyone": `{RELATIONSHIP}`, `{RELATIONSHIP}`. When the user says "all Team6 members" / "@everyone", write to all 8 (verified {CLIENT}: provider/model switch applied to all 8). A per-profile loop that hardcodes 6 names silently misses 2.
+**Roster is 8 profiles, not 6.** Protean Team core = {RELATIONSHIP}, {RELATIONSHIP}, {RELATIONSHIP}, {RELATIONSHIP}, {RELATIONSHIP}, {RELATIONSHIP}. Two auxiliary profiles also exist and are part of "everyone": `{RELATIONSHIP}`, `{RELATIONSHIP}`. When the user says "all Protean Team members" / "@everyone", write to all 8 (verified {CLIENT}: provider/model switch applied to all 8). A per-profile loop that hardcodes 6 names silently misses 2.
 
 ## Reasoning Effort by Role
 

@@ -1,16 +1,16 @@
 <!-- GENERICIZED: 4×{AMOUNT}, 2×{CLIENT}, 1×{MODEL}, 45×{RELATIONSHIP} | source: skills/coordination/model-config-skill/SKILL.md -->
 ---
 name: model-config-skill
-description: "Use when the user asks to configure models or set up model config for a project. Assess scope, determine tiers, write config to all six Team6 profiles."
+description: "Use when the user asks to configure models or set up model config for a project. Assess scope, determine tiers, write config to all six Protean Team profiles."
 version: 2.0.0
-author: {RELATIONSHIP} ({RELATIONSHIP}) rev1, {RELATIONSHIP} ({RELATIONSHIP}) rev2, Team6
+author: {RELATIONSHIP} ({RELATIONSHIP}) rev1, {RELATIONSHIP} ({RELATIONSHIP}) rev2, Protean Team
 license: MIT
 platforms: [linux, macos, windows]
 ---
 
 # Model Config Skill
 
-> Configure Team6 model tiers at the start of every project. Assess scope, determine optimal models, write config to all six profiles.
+> Configure Protean Team model tiers at the start of every project. Assess scope, determine optimal models, write config to all six profiles.
 
 ## When to Use
 
@@ -25,7 +25,7 @@ platforms: [linux, macos, windows]
 ## Prerequisites
 
 - {RELATIONSHIP} is the orchestrator running this skill
-- All six Team6 profiles exist ({RELATIONSHIP}, {RELATIONSHIP}, {RELATIONSHIP}, {RELATIONSHIP}, {RELATIONSHIP}, {RELATIONSHIP})
+- All six Protean Team profiles exist ({RELATIONSHIP}, {RELATIONSHIP}, {RELATIONSHIP}, {RELATIONSHIP}, {RELATIONSHIP}, {RELATIONSHIP})
 - Hermes Desktop is running with Bot Mode profiles configured
 
 ## How to Run
@@ -158,7 +158,7 @@ After writing all six configs, report to the user:
 
 **Frozen snapshot.** Config is read once at session start, not per turn. A mid-session config change won't hit any running room until restart. Plan accordingly.
 
-**No per-chat override for group chats.** A composer model pin is single-session. In a Team6 room, it would upgrade one agent and leave five on the default. Don't rely on it.
+**No per-chat override for group chats.** A composer model pin is single-session. In a Protean Team room, it would upgrade one agent and leave five on the default. Don't rely on it.
 
 **Prompt cache reset.** Switching model mid-chat resets the cache — the next message re-reads the whole conversation at full input price. On a long room, a fresh chat on the new model is cheaper than switching inside the old one.
 
@@ -208,7 +208,7 @@ done
 
 Finally, `hermes insights --days 1` after a paid test day shows real cost data — see the Cost measurement pitfall.
 
-## The Team6 Registry
+## The Protean Team Registry
 
 | Agent | Profile | Role |
 |---|---|---|

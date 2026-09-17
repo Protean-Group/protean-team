@@ -277,7 +277,7 @@ Checklist source: T-001 pass (soft leak classes).
 - [x] 3.
 - [x] 4.
 
-### frozen/skills/autonomous-ai-agents/multi-agent-team-orchestration/references/session-2026-08-21-team6-operations.md  *(frozen open-core sign-off)*
+### frozen/skills/autonomous-ai-agents/multi-agent-team-orchestration/references/session-2026-08-21-protean-team-operations.md  *(frozen open-core sign-off)*
 - [x] 1.
 - [x] 2.
 - [x] 3.

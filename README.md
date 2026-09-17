@@ -1,14 +1,11 @@
-# Team6-kit
+# Protean Kit
 
 Turn one AI agent engine (Hermes, from Nous Research) into a small team of AI agents that work together under clear rules — with a supervisor, a quality checker, and a builder that assembles your own team from ready-made parts.
 
-Canonical site: https://team6.askaconsult.com/
-ASKA corporate page: https://www.askaconsult.com/team6
+Canonical site: https://proteus.askaconsult.com/
 
-The canonical site is the public documentation for Team6-kit. The ASKA
-corporate page is the service listing for the team that uses it. The
-interactive experience is served by the Team6 Frontier Vercel project through
-ASKA's `/team6` route.
+The canonical site is the public documentation for Protean Kit. For the
+service listing, see the canonical site.
 
 ## What's new in this release (1.8.0)
 
@@ -35,7 +32,7 @@ During an orchestration test, a stale branch 14 commits behind origin/main was u
 
 ## What problem does it solve?
 
-One AI agent can lose track, skip steps, or claim work is done when it isn't. Team6-kit sets up several agents with separate jobs — planner, builder, checker — and rules so that:
+One AI agent can lose track, skip steps, or claim work is done when it isn't. Protean Kit sets up several agents with separate jobs — planner, builder, checker — and rules so that:
 
 - Work is checked by a different agent than the one that did it.
 - Progress is saved on disk, so a crashed agent can resume where it left off.
@@ -102,7 +99,7 @@ with route and byte/latency telemetry. It is a contract and an example config
 Start with `registry/io-delegation.yaml.example` and read
 `choreography/io-delegation.md`. Route identity follows the same
 provider/model/API-host rules as `choreography/model-policy.md`, and input must
-pass the local privacy/redaction policy (`choreography/local-preprocessing.md`)
+pass the local privacy/redaction policy (see protean-kit choreography/local-preprocessing.md)
 first. Thresholds are recommendations, not universal claims.
 
 ## Artifact contracts and resume handoffs
@@ -111,7 +108,7 @@ Every stage boundary — producer to verifier, failed run to resumed run —
 carries one handoff file: expected artifacts, required sections, size bounds,
 tests, evidence refs, runtime state (local/staged/live), failure state, last
 stable phase, resume phase, feedback applied, what to regenerate, and what not
-to touch. Team6 Kanban remains the state authority; the contract is the
+to touch. Protean Team Kanban remains the state authority; the contract is the
 handoff snapshot written out of it. Read
 `choreography/artifact-contract.md`, start from
 `templates/contracts/artifact-contract.md.tmpl`, and gate with
@@ -166,21 +163,8 @@ are conditional, what becomes public, how to recover, who approves, and what
 is still unknown. `choreography/side-effect-cost-preflight.md` defines the
 contract; `build/preflight/check.py` is a dependency-free validator that fails
 closed on missing fields, credential values, unbounded waits, or missing
-rollback. It is a Team6 internal operating pattern for side-effect and cost
-preflight. The Team6 Kanban board remains the authoritative task record.
-
-## OpenShorts route (external, docs only)
-
-Finished short-video production requests — where you explicitly ask for a rendered
-short — route to OpenShorts, an external local-first tool Team6 has studied as a
-reference. This is a documentation route only: Team6-kit does not bundle or run
-OpenShorts, does not render video by itself, and does not post, publish, or schedule
-anything on your behalf. Transcript, summary, and media-research requests stay on the
-existing media skills. You install OpenShorts separately and check its current license
-and dependency terms before use; the route ends at a local export you review.
-
-Start with `registry/openshorts-route.yaml.example` and read
-`choreography/openshorts-route.md`.
+rollback. It is a Protean Team internal operating pattern for side-effect and cost
+preflight. The Protean Team Kanban board remains the authoritative task record.
 
 ## Safe shareable run packet
 
@@ -194,7 +178,7 @@ evidence marked verified without evidence, a live status without target or
 evidence, omitted unresolved items, an internal path or profile identity, a
 credential-like value, or an off-convention placeholder. It is a conceptual
 operating pattern adapted from the general idea of an agency-orchestration run
-report — no Agency Orchestrator code is copied — and the Team6 Kanban board
+report — no Agency Orchestrator code is copied — and the Protean Team Kanban board
 remains authoritative: the packet is a derived shareable report, not a second
 state store.
 
@@ -218,11 +202,11 @@ Read `choreography/run-evidence.md`.
 For work performed with an AI coding agent, use the compact
 `choreography/ai-assisted-development.md` contract. It adds behavior-first
 testing, security checks, scope control, and evidence requirements without
-replacing the Team6 ownership and QA gates.
+replacing the Protean Team ownership and QA gates.
 
 ## What's new in this release (1.5.0)
 
-Every stage boundary can now carry one machine-checkable handoff contract: expected artifacts, required sections, size bounds, tests, evidence refs, runtime state (local/staged/live), failure state, resume phase, feedback applied, artifacts to regenerate, and artifacts not to touch. See `choreography/artifact-contract.md` and `build/check-artifact-contract.py`; Team6 Kanban remains the state authority. The previous release added the route-based model-policy catalogue (`choreography/model-policy.md`). See `CHANGELOG.md`.
+Every stage boundary can now carry one machine-checkable handoff contract: expected artifacts, required sections, size bounds, tests, evidence refs, runtime state (local/staged/live), failure state, resume phase, feedback applied, artifacts to regenerate, and artifacts not to touch. See `choreography/artifact-contract.md` and `build/check-artifact-contract.py`; Protean Team Kanban remains the state authority. The previous release added the route-based model-policy catalogue (`choreography/model-policy.md`). See `CHANGELOG.md`.
 
 ## What's new in this release (1.4.1)
 

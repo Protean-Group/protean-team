@@ -1,5 +1,5 @@
 <!-- GENERICIZED: 2×{AMOUNT}, 3×{CLIENT}, 1×{MODEL}, 4×{RELATIONSHIP} | source: skills/software-development/agent-kit-extraction/references/{CLIENT} -->
-# Worked case — {CLIENT} T-001 Team6 kit ({CLIENT})
+# Worked case — {CLIENT} T-001 Protean Team kit ({CLIENT})
 
 Full extraction-and-sanitization run that validated this skill. Funnel: idea → viability pass (12 criteria + disposition promote/park/kill/refine) → user gate → build.
 

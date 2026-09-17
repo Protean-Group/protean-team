@@ -69,7 +69,7 @@ def run_gate(name, cmd, cwd=ROOT):
 
 def main():
     print("=" * 64)
-    print("TEAM6-KIT RELEASE GATE RUNNER")
+    print("PROTEAN KIT RELEASE GATE RUNNER")
     print("=" * 64)
     print("\nThis runner executes all public release gates in documented order.")
     print("Any failure stops execution. All gates use fail-closed semantics.")

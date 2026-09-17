@@ -1,6 +1,6 @@
 # io-delegation.yaml.example — vendor-neutral I/O delegation contract example
 # Copy this file to your deployment settings and edit verified values only.
-# This is a CONFIG EXAMPLE, not a runtime, hook, or dependency. The Team6
+# This is a CONFIG EXAMPLE, not a runtime, hook, or dependency. The Protean Team
 # open-core build does not enable delegation by default.
 #
 # Rules this example reflects (see choreography/io-delegation.md):

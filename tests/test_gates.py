@@ -73,7 +73,7 @@ class TestVerifyAll(unittest.TestCase):
             timeout=120
         )
         # Should start the gates (not crash immediately)
-        self.assertIn("TEAM6-KIT RELEASE GATE RUNNER", result.stdout)
+        self.assertIn("PROTEAN KIT RELEASE GATE RUNNER", result.stdout)
 
 
 class TestSurfaceScanEmptyIdentifiers(unittest.TestCase):

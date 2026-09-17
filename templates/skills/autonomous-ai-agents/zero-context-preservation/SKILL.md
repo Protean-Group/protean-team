@@ -2,7 +2,7 @@
 name: zero-context-preservation
 description: "Use when migrating/trimming persistent memory across a fleet. Direct-execution pivot: preservation dumps + harness work done in shell at zero context cost; orchestrator preserves identity verbatim."
 version: 1.0.0
-author: Team6-kit
+author: Protean Kit
 license: Apache-2.0
 platforms: [linux, macos, windows]
 metadata:
@@ -36,7 +36,7 @@ Do NOT read MEMORY.md / USER.md into the reasoning window to "preserve" it.
 The shell does it verbatim:
 
 ```bash
-for p in azaraki kodekoot lugia shayba sheikh-al-jabr; do
+for p in davinci mozi orda sen sina; do
   M="$HOME/.hermes/profiles/$p/memories/MEMORY.md"
   U="$HOME/.hermes/profiles/$p/memories/USER.md"
   OUT="$HOME/.hermes/eldunari/domains/$p-preservation-20260904.md"

@@ -102,7 +102,7 @@ PASS — 0 instance leaks across all 7 surfaces.
 - `templates/skills/autonomous-ai-agents/multi-agent-team-orchestration/references/session-2026-08-20-{CLIENT}-phase-5.md`
 - `templates/skills/autonomous-ai-agents/multi-agent-team-orchestration/references/session-2026-08-20-{CLIENT}-phase-6.md`
 - `templates/skills/autonomous-ai-agents/multi-agent-team-orchestration/references/session-2026-08-20-{CLIENT}-phase-7.md`
-- `templates/skills/autonomous-ai-agents/multi-agent-team-orchestration/references/session-2026-08-21-team6-operations.md`
+- `templates/skills/autonomous-ai-agents/multi-agent-team-orchestration/references/session-2026-08-21-protean-team-operations.md`
 - `templates/skills/autonomous-ai-agents/multi-agent-team-orchestration/references/session-2026-08-21-the-search.md`
 - `templates/skills/autonomous-ai-agents/multi-agent-team-orchestration/references/session-2026-08-21-workflow-overhaul.md`
 - `templates/skills/autonomous-ai-agents/multi-agent-team-orchestration/references/session-2026-08-21-{CLIENT}-phase-8.md`

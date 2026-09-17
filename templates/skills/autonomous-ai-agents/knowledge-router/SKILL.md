@@ -2,7 +2,7 @@
 name: knowledge-router
 description: "Use when scaling a multi-agent memory footprint. MoE-style activation: tiny always-on router, compartmentalized knowledge modules loaded on demand."
 version: 1.0.0
-author: Team6-kit
+author: Protean Kit
 license: Apache-2.0
 platforms: [linux, macos, windows]
 metadata:
